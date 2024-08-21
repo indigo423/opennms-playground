@@ -2,9 +2,9 @@ name: Add contributors
 on:
   schedule:
     - cron: '20 20 * * *' # This is a cron expression to schedule the action
-  # push:
-  #   branches:
-  #     - master
+  push:
+    branches:
+      - main
 jobs:
   add-contributors:
     runs-on: ubuntu-latest
