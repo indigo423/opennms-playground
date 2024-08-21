@@ -1,0 +1,12 @@
+<model-import xmlns="http://xmlns.opennms.org/xsd/config/model-import" date-stamp="2024-08-21T11:21:51.842Z" foreign-source="Layer-1" last-import="2024-08-21T11:21:55.851Z">
+  <node foreign-id="L1-node-01" node-label="L1-node-01">
+    <interface ip-addr="127.0.10.1" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L1-node-02" node-label="L1-node-02">
+    <interface ip-addr="127.0.10.2" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+</model-import>

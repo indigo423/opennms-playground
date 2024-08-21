@@ -1,0 +1,11 @@
+---
+services:
+
+  onms-hzn-core:
+    depends_on:
+      database:
+        condition: service_healthy
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/overlay-etc:/opt/opennms-etc-overlay

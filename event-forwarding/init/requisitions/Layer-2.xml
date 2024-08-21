@@ -1,0 +1,22 @@
+<model-import xmlns="http://xmlns.opennms.org/xsd/config/model-import" date-stamp="2024-08-21T11:26:34.466Z" foreign-source="Layer-2" last-import="2024-08-21T11:26:38.657Z">
+  <node foreign-id="L2-node-01" node-label="L2-node-01" parent-foreign-source="Layer-1" parent-foreign-id="L1-node-01" parent-node-label="">
+    <interface ip-addr="127.0.20.1" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L2-node-02" node-label="L2-node-02" parent-foreign-source="Layer-1" parent-foreign-id="L1-node-01">
+    <interface ip-addr="127.0.20.2" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L2-node-03" node-label="L2-node-03" parent-foreign-source="Layer-1" parent-foreign-id="L1-node-02">
+    <interface ip-addr="127.0.20.3" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L2-node-04" node-label="L2-node-04" parent-foreign-source="Layer-1" parent-foreign-id="L1-node-02">
+    <interface ip-addr="127.0.20.4" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+</model-import>

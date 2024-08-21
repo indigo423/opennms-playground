@@ -1,0 +1,82 @@
+<model-import xmlns="http://xmlns.opennms.org/xsd/config/model-import" date-stamp="2024-08-21T11:38:28.172Z" foreign-source="Layer-4" last-import="2024-08-21T11:38:32.364Z">
+  <node foreign-id="L4-node-01" node-label="L4-node-01" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-01">
+    <interface ip-addr="127.0.40.1" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-02" node-label="L4-node-02" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-01">
+    <interface ip-addr="127.0.40.2" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-03" node-label="L4-node-03" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-02">
+    <interface ip-addr="127.0.40.3" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-04" node-label="L4-node-04" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-02">
+    <interface ip-addr="127.0.40.4" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-05" node-label="L4-node-05" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-03">
+    <interface ip-addr="127.0.40.5" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-06" node-label="L4-node-06" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-03">
+    <interface ip-addr="127.0.40.6" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-07" node-label="L4-node-07" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-04">
+    <interface ip-addr="127.0.40.7" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-08" node-label="L4-node-07" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-04">
+    <interface ip-addr="127.0.40.8" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-09" node-label="L4-node-09" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-05">
+    <interface ip-addr="127.0.40.9" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-10" node-label="L4-node-10" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-05">
+    <interface ip-addr="127.0.40.10" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-11" node-label="L4-node-11" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-06">
+    <interface ip-addr="127.0.40.11" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-12" node-label="L4-node-12" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-06">
+    <interface ip-addr="127.0.40.12" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-13" node-label="L4-node-13" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-07">
+    <interface ip-addr="127.0.40.13" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-14" node-label="L4-node-14" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-07">
+    <interface ip-addr="127.0.40.14" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-15" node-label="L4-node-15" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-08">
+    <interface ip-addr="127.0.40.15" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+  <node foreign-id="L4-node-16" node-label="L4-node-16" parent-foreign-source="Layer-3" parent-foreign-id="L3-node-08">
+    <interface ip-addr="127.0.40.16" status="1" snmp-primary="N">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+  </node>
+</model-import>
