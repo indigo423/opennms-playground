@@ -1,0 +1,18 @@
+---
+services:
+
+  onms-hzn-core:
+    depends_on:
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/onms-hzn-core/overlay-etc:/opt/opennms-etc-overlay
+    ports:
+      - "8980:8980/tcp"
+  
+  minion:
+    depends_on:
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/onms-hzn-minion/minion-config.yaml:/opt/minion/minion-config.yaml
