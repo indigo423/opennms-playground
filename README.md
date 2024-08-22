@@ -15,13 +15,15 @@ There will be two credential sets created, the user for the OpenNMS Horizon data
 docker run --rm -v $(pwd):/opt/opennms/etc \
   --entrypoint /opt/opennms/bin/scvcli \
   quay.io/labmonkeys/onms-horizon:33.0.7 \
-  set postgres opennms "Cux2j4WEA59j28WF5Kt%"
+  set postgres opennms "change_me!_Cux2j4WEA59j28WF5Kt%"
 
 docker run --rm -v $(pwd):/opt/opennms/etc \
   --entrypoint /opt/opennms/bin/scvcli \
   quay.io/labmonkeys/onms-horizon:33.0.7 \
-  set postgres-admin postgres "VRL7FhR@mGw@djhS2A4"
+  set postgres-admin postgres "change_me!_VRL7FhR@mGw@djhS2A4"
 ```
+> [!IMPORTANT]
+> Don't use the passwords above, they are just an example.
 
 # Credits
 
