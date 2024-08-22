@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="breadcrumb-strategy" for="graphml" attr.name="breadcrumb-strategy" attr.type="string"/>
+    <key id="label" for="all" attr.name="label" attr.type="string"></key>
+    <key id="description" for="graph" attr.name="description" attr.type="string"></key>
+    <key id="namespace" for="graph" attr.name="namespace" attr.type="string"></key>
+    <key id="focus-strategy" for="graph" attr.name="focus-strategy" attr.type="string"></key>
+    <key id="focus-ids" for="graph" attr.name="focus-ids" attr.type="string"></key>
+    <key id="foreignSource" for="node" attr.name="foreignSource" attr.type="string"></key>
+    <key id="foreignID" for="node" attr.name="foreignID" attr.type="string"></key>
+    <key id="preferred-layout" for="graph" attr.name="preferred-layout" attr.type="string"></key>
+    <key id="vertex-status-provider" for="graph" attr.name="vertex-status-provider" attr.type="boolean"></key>
+    <key id="iconKey" for="node" attr.name="iconKey" attr.type="string"></key>
+    <key id="semantic-zoom-level" for="graph" attr.name="semantic-zoom-level" attr.type="int"/>
+    <data key="label">OpenNMS Demo</data>
+    <data key="breadcrumb-strategy">NONE</data>
+
+    <graph id="topology" edgedefault="undirected">
+        <data key="namespace">opennms-demo</data>
+        <data key="focus-strategy">ALL</data>
+        <data key="vertex-status-provider">true</data>
+
+        <!-- Stuttgart -->
+        <node id="database">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">database</data>
+            <data key="foreignID">database</data>
+            <data key="iconKey">database</data>
+        </node>
+        <node id="horizon">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">horizon</data>
+            <data key="foreignID">horizon</data>
+            <data key="iconKey">opennms_server</data>
+        </node>
+        <node id="grafana">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">grafana</data>
+            <data key="foreignID">grafana</data>
+        </node>
+        <node id="srv-stuttgart-01">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">srv-stuttgart-01</data>
+            <data key="foreignID">srv-stuttgart-01</data>
+            <data key="iconKey">linux_file_server</data>
+        </node>
+        <node id="srv-stuttgart-02">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">srv-stuttgart-02</data>
+            <data key="foreignID">srv-stuttgart-02</data>
+            <data key="iconKey">linux_file_server</data>
+        </node>
+        <node id="web-stuttgart-01">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">web-stuttgart-01</data>
+            <data key="foreignID">web-stuttgart-01</data>
+            <data key="iconKey">server</data>
+        </node>
+        <edge id="opennms-net-stuttgart" source="horizon" target="net-stuttgart"/>
+        <edge id="grafana-net-stuttgart" source="grafana" target="net-stuttgart"/>
+        <edge id="database-net-stuttgart" source="database" target="net-stuttgart"/>
+        <edge id="srv-stuttgart-01-net-stuttgart" source="srv-stuttgart-01" target="net-stuttgart"/>
+        <edge id="srv-stuttgart-02-net-stuttgart" source="srv-stuttgart-02" target="net-stuttgart"/>
+        <edge id="web-stuttgart-01-net-stuttgart" source="web-stuttgart-01" target="net-stuttgart"/>
+
+        <!-- Networks -->
+        <node id="net-stuttgart">
+            <data key="label">172.30.0.0/24</data>
+            <data key="iconKey">vmware-network</data>
+        </node>
+        <node id="net-fulda">
+            <data key="label">172.31.0.0/24</data>
+            <data key="iconKey">vmware-network</data>
+        </node>
+
+        <!-- Branch -->
+        <node id="minion-fulda-01">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">minion-branch</data>
+            <data key="foreignID">minion-branch</data>
+        </node>
+        <node id="srv-fulda-01">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">srv-fulda-01</data>
+            <data key="foreignID">srv-fulda-01</data>
+            <data key="iconKey">linux_file_server</data>
+        </node>
+        <node id="srv-fulda-02">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">srv-fulda-02</data>
+            <data key="foreignID">srv-fulda-02</data>
+            <data key="iconKey">linux_file_server</data>
+        </node>
+        <node id="web-fulda-01">
+            <data key="foreignSource">demo-environment</data>
+            <data key="label">web-fulda-01</data>
+            <data key="foreignID">web-fulda-01</data>
+            <data key="iconKey">server</data>
+        </node>
+        <edge id="minion-fulda-01-net-fulda" source="minion-fulda-01" target="net-fulda"/>
+        <edge id="minion-fulda-01-net-stuttgart" source="minion-fulda-01" target="net-stuttgart"/>
+        <edge id="srv-fulda-01-branch-net-fulda" source="srv-fulda-01" target="net-fulda"/>
+        <edge id="srv-fulda-02-branch-net-fulda" source="srv-fulda-02" target="net-fulda"/>
+        <edge id="web-fulda-01-net-fulda" source="web-fulda-01" target="net-fulda"/>
+    </graph>
+</graphml>

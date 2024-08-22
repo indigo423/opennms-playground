@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model-import xmlns="http://xmlns.opennms.org/xsd/config/model-import" date-stamp="2016-10-28T10:50:02.025Z" foreign-source="demo-environment" last-import="2016-10-28T10:51:29.354Z">
+  <node location="Default" foreign-id="database" node-label="database">
+    <interface ip-addr="172.30.0.10" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Default" foreign-id="horizon" node-label="horizon">
+    <interface ip-addr="127.0.0.1" status="1" snmp-primary="P">
+      <monitored-service service-name="OpenNMS-JVM"/>
+    </interface>
+    <interface ip-addr="172.30.0.11" status="1" snmp-primary="S">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Default" foreign-id="grafana" node-label="grafana">
+    <interface ip-addr="172.30.0.13" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Default" foreign-id="srv-stuttgart-01" node-label="srv-stuttgart-01">
+    <interface ip-addr="172.30.0.32" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+      <monitored-service service-name="SNMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Default" foreign-id="srv-stuttgart-02" node-label="srv-stuttgart-02">
+    <interface ip-addr="172.30.0.33" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+      <monitored-service service-name="SNMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Default" foreign-id="web-stuttgart-01" node-label="web-stuttgart-01">
+    <interface ip-addr="172.30.0.34" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
+  <node location="Fulda" foreign-id="minion-fulda-01" node-label="minion-fulda-01">
+    <interface ip-addr="172.31.0.12" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.6850807"/>
+    <asset name="latitude" value="50.5648609"/>
+  </node>
+
+  <node location="Fulda" foreign-id="srv-fulda-01" node-label="srv-fulda-01">
+    <interface ip-addr="172.31.0.32" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+      <monitored-service service-name="SNMP"/>
+    </interface>
+    <asset name="longitude" value="9.6850807"/>
+    <asset name="latitude" value="50.5648609"/>
+  </node>
+
+  <node location="Fulda" foreign-id="srv-fulda-02" node-label="srv-fulda-02">
+    <interface ip-addr="172.31.0.33" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+      <monitored-service service-name="SNMP"/>
+    </interface>
+    <asset name="longitude" value="9.6850807"/>
+    <asset name="latitude" value="50.5648609"/>
+  </node>
+
+  <node location="Fulda" foreign-id="web-fulda-01" node-label="web-fulda-01">
+    <interface ip-addr="172.31.0.34" status="1" snmp-primary="P">
+      <monitored-service service-name="ICMP"/>
+    </interface>
+    <asset name="longitude" value="9.6850807"/>
+    <asset name="latitude" value="50.5648609"/>
+  </node>
+</model-import>

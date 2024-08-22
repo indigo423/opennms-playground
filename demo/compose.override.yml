@@ -1,0 +1,88 @@
+---
+services:
+
+  kafka-broker:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.9
+        
+  database:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.10
+
+  onms-hzn-core:
+    depends_on:
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/onms-hzn-core/overlay-etc:/opt/opennms-etc-overlay
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.11
+    ports:
+      - "8980:8980/tcp"
+  
+  grafana:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.13
+    ports:
+      - "3000:3000/tcp"
+  
+  minion:
+    volumes:
+      - ./container-fs/onms-hzn-minion/minion-config.yaml:/opt/minion/minion-config.yaml
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.12
+      net.fulda:
+        ipv4_address: 172.31.0.12
+
+  srv-stuttgart-01:
+    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.32
+
+  srv-stuttgart-02:
+    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.33
+
+  web-stuttgart-01:
+    image: httpd
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.34
+
+  srv-fulda-01:
+    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    networks:
+      net.fulda:
+        ipv4_address: 172.31.0.32
+
+  srv-fulda-02:
+    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    networks:
+      net.fulda:
+        ipv4_address: 172.31.0.33
+
+  web-fulda-01:
+    image: httpd
+    networks:
+      net.fulda:
+        ipv4_address: 172.31.0.34
+
+networks:
+  net.stuttgart:
+      driver: bridge
+      ipam:
+        config:
+          - subnet: 172.30.0.0/16
+  net.fulda:
+      driver: bridge
+      ipam:
+        config:
+          - subnet: 172.31.0.0/16
