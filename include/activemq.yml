@@ -1,0 +1,15 @@
+---
+services:
+
+  activemq:
+    build:
+      context: activemq
+    environment:
+      TZ: 'UTC'
+    volumes:
+      - 'data_activemq:/opt/activemq/data'
+    ports:
+      - '61616/tcp'
+
+volumes:
+  data_activemq: {}
