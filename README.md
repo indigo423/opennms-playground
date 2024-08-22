@@ -1,3 +1,5 @@
+[![Validate Docker Compose files](https://github.com/indigo423/opennms-playground/actions/workflows/validate-docker-compose.yml/badge.svg)](https://github.com/indigo423/opennms-playground/actions/workflows/validate-docker-compose.yml)
+
 # 🕹️ Playground for OpenNMS Horizon
 
 This is a collection of deployment scenarios for OpenNMS Horizon.
