@@ -1,0 +1,17 @@
+---
+services:
+  
+  minion:
+    image: quay.io/labmonkeys/onms-minion:33.0.7
+    environment:
+      TZ: UTC
+      JAVA_MIN_MEM: 512M
+      JAVA_MAX_MEM: 2048M
+    command: ["-f"]
+    healthcheck:
+      test: "/health.sh"
+      interval: 5s
+      timeout: 4s
+      retries: 20
+    ports:
+      - "8201/tcp"

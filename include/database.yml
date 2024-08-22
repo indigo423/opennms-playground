@@ -17,7 +17,7 @@ services:
       timeout: 1s
       retries: 10
     ports:
-      - "5432:5432/tcp"
+      - "5432/tcp"
 
 volumes:
   data_pg: {}

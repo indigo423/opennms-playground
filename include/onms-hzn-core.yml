@@ -11,12 +11,12 @@ services:
     command: ["-s"]
     volumes:
       - data_onms_hzn_cfg:/opt/opennms/etc
-      - data_onms_hzn:/opt/opennms-data
+      - data_onms_hzn:/opennms-data
     ports:
-      - "8101:8101/tcp"
-      - "8980:8980/tcp"
-      - "162:1162/udp"
-      - "514:10514/udp"
+      - "8101/tcp"
+      - "8980/tcp"
+      - "1162/udp"
+      - "10514/udp"
     healthcheck:
       test: [ "CMD", "curl", "-f", "-I", "http://localhost:8980/opennms/login.jsp" ]
       interval: 5s

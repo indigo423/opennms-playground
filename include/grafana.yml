@@ -9,7 +9,7 @@ services:
     volumes:
       - data_grafana:/var/lib/grafana
     ports:
-      - "3000:3000/tcp"
+      - "3000/tcp"
 
 volumes:
   data_grafana: {}
