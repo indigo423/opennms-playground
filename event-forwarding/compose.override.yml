@@ -3,9 +3,9 @@ services:
 
   onms-hzn-core:
     depends_on:
-      database:
-        condition: service_healthy
       kafka-broker:
         condition: service_started
     volumes:
       - ./container-fs/overlay-etc:/opt/opennms-etc-overlay
+    ports:
+      - "8980:8980/tcp"
