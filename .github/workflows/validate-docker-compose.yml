@@ -12,5 +12,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate Docker Compose files
         run: |
-          docker compose -f demo/compose.yml config
-          docker compose -f event-forwarding/compose.yml config
+          find . -iname "compose.yml" -exec docker compose -f {} config \;
