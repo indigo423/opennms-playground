@@ -1,0 +1,22 @@
+---
+services:
+
+  activemq:
+    volumes:
+      - ./container-fs/activemq/activemq-config.xml:/opt/activemq/conf/activemq-config.xml
+  
+  onms-hzn-core:
+    depends_on:
+      activemq:
+        condition: service_started
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+    ports:
+      - "8980:8980/tcp"
+  
+  onms-hzn-minion:
+    depends_on:
+      activemq:
+        condition: service_started
+    volumes:
+      - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
