@@ -1,7 +1,7 @@
 ---
 services:
   
-  minion:
+  onms-hzn-minion:
     image: quay.io/labmonkeys/onms-minion:33.0.7
     environment:
       TZ: UTC

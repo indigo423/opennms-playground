@@ -9,8 +9,6 @@ services:
         "-c",
         "export CLUSTER_ID=$$(bin/kafka-storage.sh random-uuid) && bin/kafka-storage.sh format -t $$CLUSTER_ID -c config/kraft/server.properties && bin/kafka-server-start.sh config/kraft/server.properties --override advertised.listeners=$${KAFKA_ADVERTISED_LISTENERS} --override listener.security.protocol.map=$${KAFKA_LISTENER_SECURITY_PROTOCOL_MAP} --override listeners=$${KAFKA_LISTENERS}",
       ]
-    ports:
-      - "9092/tcp"
     environment:
       TZ: UTC
       LOG_DIR: "/tmp/logs"
@@ -27,6 +25,8 @@ services:
       KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS: 20000
       KAFKA_LOG_SEGMENT_BYTES: 107374182
       KAFKA_LOG_SEGMENT_DELETE_DELAY_MS: 1000
+    ports:
+      - "9092/tcp"
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
