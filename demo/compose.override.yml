@@ -16,7 +16,7 @@ services:
       kafka-broker:
         condition: service_started
     volumes:
-      - ./container-fs/onms-hzn-core/overlay-etc:/opt/opennms-etc-overlay
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.11
@@ -30,9 +30,9 @@ services:
     ports:
       - "3000:3000/tcp"
   
-  minion:
+  onms-hzn-minion:
     volumes:
-      - ./container-fs/onms-hzn-minion/minion-config.yaml:/opt/minion/minion-config.yaml
+      - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.12
