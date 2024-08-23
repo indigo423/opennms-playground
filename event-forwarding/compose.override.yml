@@ -6,6 +6,6 @@ services:
       kafka-broker:
         condition: service_started
     volumes:
-      - ./container-fs/overlay-etc:/opt/opennms-etc-overlay
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     ports:
       - "8980:8980/tcp"
