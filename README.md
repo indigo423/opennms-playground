@@ -6,6 +6,14 @@ This is a collection of deployment scenarios for OpenNMS Horizon.
 It can be used to learn and test functions and features of the network monitoring stack OpenNMS Horizon.
 This is not a production ready deployment, but it will help you understand which components are required and how need to think about 3rd party service dependencies and data persistence.
 
+## Principles
+
+The stacks with the configurations are built to use external dependencies from a `include` directory, that way we don't have to repeat ourselves that often when we go into different deployment scenarios.
+Nevertheless, to get specialized behavior in every stack, we use the compose.override.yml pattern which is automatically applied when you run `docker compose up -d` and doesn't require any additional user interaction.
+
+> [!IMPORTANT]
+> For configuring the OpenNMS Horizon {Core, Minion, Sentinel}, explicitely remove dependencies to the shipped `confd` application in the container. I will just use plain file injection to do the configuration and intentionally remove this layer of complexity.
+
 ## How can I create a secure credential vault
 
 The following commands will create a `scv.jce` file in your current working directoy with credentials for connecting to the PostgreSQL database.
@@ -24,6 +32,10 @@ docker run --rm -v $(pwd):/opt/opennms/etc \
 ```
 > [!IMPORTANT]
 > Don't use the passwords above, they are just an example.
+
+# Author
+
+* Ronny Trommer <ronny@no42.org>
 
 # Credits
 
