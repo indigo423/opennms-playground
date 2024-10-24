@@ -2,7 +2,7 @@
 services:
   
   onms-hzn-minion:
-    image: quay.io/labmonkeys/onms-minion:33.0.7
+    image: opennms/minion:33.0.9
     environment:
       TZ: UTC
       JAVA_MIN_MEM: 512M

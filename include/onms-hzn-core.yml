@@ -2,7 +2,7 @@
 services:
 
   onms-hzn-core:
-    image: quay.io/labmonkeys/onms-horizon:33.0.7
+    image: opennms/horizon:33.0.9
     depends_on:
       database:
         condition: service_healthy

@@ -1,0 +1,10 @@
+---
+services:
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - data-prom:/prometheus
+    ports:
+      - "9090/tcp"
+volumes:
+  data-prom: {}
