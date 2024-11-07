@@ -3,6 +3,11 @@ services:
 
   kafka-broker:
     image: quay.io/strimzi/kafka:latest-kafka-3.8.0
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 384m
     command:
       [
         "sh",

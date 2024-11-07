@@ -3,6 +3,11 @@ services:
   
   onms-hzn-minion:
     image: opennms/minion:33.0.9
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 4g
     environment:
       TZ: UTC
       JAVA_MIN_MEM: 512M

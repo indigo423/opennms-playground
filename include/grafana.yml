@@ -3,6 +3,11 @@ services:
 
   grafana:
     image: grafana/grafana:latest
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 256m
     environment:
       TZ: UTC
       GF_SECURITY_ADMIN_PASSWORD: mypass # Change me!

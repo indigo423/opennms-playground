@@ -3,6 +3,11 @@ services:
 
   timescaledb:
     image: timescale/timescaledb:latest-pg15
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 512m
     environment:
       TZ: UTC
       POSTGRES_HOST: database

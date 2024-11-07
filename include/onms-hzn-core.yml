@@ -3,6 +3,11 @@ services:
 
   onms-hzn-core:
     image: opennms/horizon:33.0.9
+    deploy:
+      resources:
+        limits:
+          cpus: 2.0
+          memory: 8g
     depends_on:
       database:
         condition: service_healthy

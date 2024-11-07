@@ -3,6 +3,11 @@ services:
 
   prometheus:
     image: prom/prometheus
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 512m
     volumes:
       - data-prom:/prometheus
     ports:
