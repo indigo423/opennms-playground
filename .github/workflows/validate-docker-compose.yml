@@ -7,7 +7,7 @@ jobs:
   validate-docker-compose:
     runs-on: ubuntu-latest
     container:
-      image: quay.io/bluebird/base-builder:ubuntu.0.1.0.b53
+      image: quay.io/bluebird/base-builder:ubuntu.0.1.2.b2
     steps:
       - uses: actions/checkout@v4
       - name: Validate Docker Compose files
