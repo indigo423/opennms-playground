@@ -1,0 +1,9 @@
+---
+services:
+
+  onms-hzn-core:
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+    ports:
+      - "8101:8101/tcp"
+      - "8980:8980/tcp"

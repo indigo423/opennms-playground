@@ -1,0 +1,4 @@
+---
+include:
+  - ../include/database.yml
+  - ../include/onms-hzn-core.yml
