@@ -7,7 +7,7 @@ services:
       resources:
         limits:
           cpus: 1.0
-          memory: 384m
+          memory: 1g
     command:
       [
         "sh",
@@ -35,6 +35,14 @@ services:
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
+    depends_on:
+      kafka-broker:
+        condition: service_started
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 512m
     environment:
       TZ: UTC
       KAFKA_CLUSTERS_0_NAME: onms-kafka-playground

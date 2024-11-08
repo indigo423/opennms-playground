@@ -6,8 +6,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: 1.0
-          memory: 512m
+          cpus: 2.0
+          memory: 1g
     environment:
       TZ: UTC
       POSTGRES_HOST: database

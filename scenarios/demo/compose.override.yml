@@ -4,12 +4,25 @@ services:
   kafka-broker:
     networks:
       net.stuttgart:
-        ipv4_address: 172.30.0.9
+        ipv4_address: 172.30.0.3
+        ipv6_address: fd23:9695:aa65:fff0::3
         
+  elasticsearch:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.4
+        ipv6_address: fd23:9695:aa65:fff0::4
+    volumes:
+      - ./container-fs/elasticsearch/plugins:/usr/share/elasticsearch/plugins
+    ports:
+      - "9200:9200/tcp"
+      - "9300:9300/tcp"
+
   database:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.10
+        ipv6_address: fd23:9695:aa65:fff0::10
 
   onms-hzn-core:
     depends_on:
@@ -20,6 +33,7 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.11
+        ipv6_address: fd23:9695:aa65:fff0::11
     ports:
       - "8980:8980/tcp"
   
@@ -27,6 +41,11 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.13
+        ipv6_address: fd23:9695:aa65:fff0::13
+    environment:
+      GF_INSTALL_PLUGINS: opennms-opennms-app,grafana-piechart-panel,neocat-cal-heatmap-panel,briangann-datatable-panel
+    volumes:
+       - ./container-fs/grafana:/etc/grafana/provisioning/
     ports:
       - "3000:3000/tcp"
   
@@ -36,44 +55,52 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.12
+        ipv6_address: fd23:9695:aa65:fff0::12
       net.fulda:
         ipv4_address: 172.31.0.12
+        ipv6_address: fd23:9695:aa65:fff1::12
 
   srv-stuttgart-01:
-    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.32
+        ipv6_address: fd23:9695:aa65:fff0::32
 
   srv-stuttgart-02:
-    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.33
+        ipv6_address: fd23:9695:aa65:fff0::33
 
   web-stuttgart-01:
     image: httpd
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.34
+        ipv6_address: fd23:9695:aa65:fff0::34
 
   srv-fulda-01:
-    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
     networks:
       net.fulda:
         ipv4_address: 172.31.0.32
+        ipv6_address: fd23:9695:aa65:fff1::32
 
   srv-fulda-02:
-    image: quay.io/labmonkeys/net-snmp:5.9.3-r0.b1425
+    image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
     networks:
       net.fulda:
         ipv4_address: 172.31.0.33
+        ipv6_address: fd23:9695:aa65:fff1::33
 
   web-fulda-01:
     image: httpd
     networks:
       net.fulda:
         ipv4_address: 172.31.0.34
+        ipv6_address: fd23:9695:aa65:fff1::34
 
 networks:
   net.stuttgart:
@@ -81,8 +108,10 @@ networks:
       ipam:
         config:
           - subnet: 172.30.0.0/16
+          - subnet: fd23:9695:aa65:fff0::/64
   net.fulda:
       driver: bridge
       ipam:
         config:
           - subnet: 172.31.0.0/16
+          - subnet: fd23:9695:aa65:fff1::/64

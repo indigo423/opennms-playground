@@ -9,3 +9,7 @@ services:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     ports:
       - "8980:8980/tcp"
+
+  kafka-ui:
+    ports:
+      - "8080:8080/tcp"

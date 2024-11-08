@@ -1,5 +1,6 @@
 ---
 include:
+  - ../../include/elasticsearch.yml
   - ../../include/database.yml
   - ../../include/kafka-broker.yml
   - ../../include/onms-hzn-core.yml
