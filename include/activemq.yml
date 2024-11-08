@@ -4,6 +4,11 @@ services:
   activemq:
     build:
       context: activemq
+    deploy:
+      resources:
+        limits:
+          cpus: 0.5
+          memory: 512m
     environment:
       TZ: 'UTC'
     volumes:

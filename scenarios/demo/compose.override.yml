@@ -62,6 +62,11 @@ services:
 
   srv-stuttgart-01:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.32
@@ -69,6 +74,11 @@ services:
 
   srv-stuttgart-02:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.33
@@ -76,6 +86,11 @@ services:
 
   web-stuttgart-01:
     image: httpd
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.34
@@ -83,6 +98,11 @@ services:
 
   srv-fulda-01:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.fulda:
         ipv4_address: 172.31.0.32
@@ -90,6 +110,11 @@ services:
 
   srv-fulda-02:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.fulda:
         ipv4_address: 172.31.0.33
@@ -97,6 +122,11 @@ services:
 
   web-fulda-01:
     image: httpd
+    deploy:
+      resources:
+        limits:
+          cpus: 0.25
+          memory: 64m
     networks:
       net.fulda:
         ipv4_address: 172.31.0.34
