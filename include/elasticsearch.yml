@@ -1,0 +1,27 @@
+---
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    deploy:
+      resources:
+        limits:
+          cpus: 2.0
+          memory: 4g
+    environment:
+      TZ: UTC
+      discovery.type: single-node
+      node.name: es-node-01
+    ports:
+      - "9200/tcp"
+      - "9300/tcp"
+    volumes:
+      - data_es:/usr/share/elasticsearch/data
+    healthcheck:
+      test: curl http://localhost:9200 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 3s
+      timeout: 2s
+      retries: 10
+
+volumes:
+  data_es: {}

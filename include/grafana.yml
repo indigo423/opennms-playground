@@ -10,7 +10,8 @@ services:
           memory: 256m
     environment:
       TZ: UTC
-      GF_SECURITY_ADMIN_PASSWORD: mypass # Change me!
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
     volumes:
       - data_grafana:/var/lib/grafana
     ports:
