@@ -1,7 +1,7 @@
 ---
 services:
 
-  timescaledb:
+  database:
     image: timescale/timescaledb:latest-pg15
     deploy:
       resources:

@@ -1,0 +1,9 @@
+---
+include:
+  - ../include/timescaledb.yml
+  - ../include/mimir.yml
+  - ../include/elasticsearch.yml
+  - ../include/kafka-broker.yml
+  - ../include/onms-hzn-core.yml
+  - ../include/onms-hzn-minion.yml
+  - ../include/grafana.yml

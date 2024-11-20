@@ -1,0 +1,19 @@
+---
+services:
+
+  cortex:
+    image: quay.io/cortexproject/cortex:v1.18.1
+    command: ["-config.file=/etc/cortex-config.yaml"]
+    volumes:
+      - ./cortex-config.yaml:/etc/cortex-config.yaml
+      - data-cortex:/data/cortex
+    ports:
+      - "9009/tcp"
+    healthcheck:
+      test: wget -qO- http://127.0.0.1:9009/ready
+      interval: 10s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  data-cortex: {}

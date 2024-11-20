@@ -1,0 +1,40 @@
+---
+services:
+
+  mimir:
+    ports:
+      - "9090:9090/tcp"
+
+  onms-hzn-core:
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      mimir:
+        condition: service_started
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+      - ./container-fs/core-overlay:/opt/opennms-overlay
+    ports:
+      - "8101:8101/tcp"
+      - "8980:8980/tcp"
+      - "4729:4729/udp"
+      - "11019:11019/tcp"
+  
+  onms-hzn-minion:
+    depends_on:
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
+    ports:
+      - "8201:8201/tcp"
+      - "4729:4729/udp"
+      - "11019:11019/tcp"
+      - "162:1162/udp"
+      - "514:1514/udp"
+
+  grafana:
+    ports:
+      - "3000:3000/tcp"

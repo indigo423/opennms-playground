@@ -1,0 +1,14 @@
+---
+services:
+
+  mimir:
+    image: grafana/mimir:latest
+    command: ["-config.file=/etc/mimir-config.yaml"]
+    volumes:
+      - ./mimir/mimir-config.yaml:/etc/mimir-config.yaml
+      - data-mimir:/data/mimir
+    ports:
+      - "9009/tcp"
+
+volumes:
+  data-mimir: {}

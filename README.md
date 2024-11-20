@@ -1,4 +1,4 @@
-[![Validate Docker Compose files](https://github.com/labmonkeys-space/opennms-playground/actions/workflows/validate-docker-compose.yml/badge.svg)](https://github.com/labmonkeys-spacegti/opennms-playground/actions/workflows/validate-docker-compose.yml)
+[![Validate Docker Compose files](https://github.com/indigo423/opennms-playground/actions/workflows/validate-docker-compose.yml/badge.svg)](https://github.com/indigo423/opennms-playground/actions/workflows/validate-docker-compose.yml)
 
 # 🕹️ Playground for OpenNMS Horizon
 
