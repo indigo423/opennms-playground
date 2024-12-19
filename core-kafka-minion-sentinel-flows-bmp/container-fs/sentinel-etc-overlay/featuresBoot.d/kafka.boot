@@ -1,1 +1,1 @@
-opennms-core-ipc-kafka
+sentinel-kafka
