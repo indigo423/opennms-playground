@@ -6,3 +6,4 @@ include:
   - ../include/onms-hzn-core.yml
   - ../include/onms-hzn-minion.yml
   - ../include/grafana.yml
+  - ../include/jaeger.yml

@@ -3,3 +3,4 @@ include:
   - ../include/database.yml
   - ../include/onms-hzn-core.yml
   - ../include/onms-hzn-minion.yml
+  - ../include/jaeger.yml

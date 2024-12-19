@@ -7,3 +7,4 @@ include:
   - ../../include/onms-hzn-minion.yml
   - ../../include/grafana.yml
   - ../../include/prometheus.yml
+  - ../../include/jaeger.yml

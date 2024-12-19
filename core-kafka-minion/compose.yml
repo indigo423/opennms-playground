@@ -1,3 +1,4 @@
 ---
 include:
   - ../include/kafka-broker.yml
+  - ../../include/jaeger.yml

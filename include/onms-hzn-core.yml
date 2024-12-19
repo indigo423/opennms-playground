@@ -13,6 +13,7 @@ services:
         condition: service_healthy
     environment:
       TZ: UTC
+      JAEGER_ENDPOINT: http://jaeger:14268/api/traces
     command: ["-s"]
     volumes:
       - data_onms_hzn_cfg:/opt/opennms/etc

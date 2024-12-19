@@ -10,6 +10,7 @@ services:
           memory: 4g
     environment:
       TZ: UTC
+      JAEGER_ENDPOINT: http://jaeger:14268/api/traces
       JAVA_MIN_MEM: 512M
       JAVA_MAX_MEM: 2048M
     command: ["-f"]
