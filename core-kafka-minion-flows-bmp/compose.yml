@@ -1,6 +1,7 @@
 ---
 include:
   - ../include/timescaledb.yml
+  - ../include/pgadmin.yml
   - ../include/mimir.yml
   - ../include/elasticsearch.yml
   - ../include/kafka-broker.yml

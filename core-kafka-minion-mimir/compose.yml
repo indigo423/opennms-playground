@@ -1,6 +1,7 @@
 ---
 include:
   - ../include/database.yml
+  - ../include/pgadmin.yml
   - ../include/mimir.yml
   - ../include/kafka-broker.yml
   - ../include/onms-hzn-core.yml

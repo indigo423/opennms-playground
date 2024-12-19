@@ -1,0 +1,16 @@
+---
+services:
+
+  pgadmin:
+    image: dpage/pgadmin4:8.14.0
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 512m
+    environment:
+      TZ: UTC
+      PGADMIN_DEFAULT_EMAIL: admin@my.lab
+      PGADMIN_DEFAULT_PASSWORD: my-pass
+    ports:
+      - "80/tcp"

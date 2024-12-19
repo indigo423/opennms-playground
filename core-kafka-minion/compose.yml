@@ -1,4 +1,6 @@
 ---
 include:
+  - ../include/database.yml
+  - ../include/pgadmin.yml
   - ../include/kafka-broker.yml
-  - ../../include/jaeger.yml
+  - ../include/jaeger.yml

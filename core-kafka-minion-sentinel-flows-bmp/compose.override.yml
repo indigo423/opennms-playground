@@ -39,6 +39,26 @@ services:
       - "162:1162/udp"
       - "514:1514/udp"
 
-  grafana:
+  onms-hzn-sentinel:
+    depends_on:
+      database:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+      kafka-broker:
+        condition: service_started
+    volumes:
+      - ./container-fs/sentinel-etc-overlay:/opt/sentinel-etc-overlay
     ports:
-      - "3000:3000/tcp"
+      - "8301:8301/tcp"
+
+  pgadmin:
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "80:80/tcp"
+
+  kafka-ui:
+    ports:
+      - "8080:8080/tcp"
