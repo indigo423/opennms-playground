@@ -2,7 +2,7 @@
 services:
 
   onms-hzn-sentinel:
-    image: opennms/sentinel:33.1.1
+    image: opennms/sentinel:33.1.2
     deploy:
       resources:
         limits:
