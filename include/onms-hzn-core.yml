@@ -2,7 +2,7 @@
 services:
 
   onms-hzn-core:
-    image: opennms/horizon:33.1.2
+    image: opennms/horizon:33.1.3
     deploy:
       resources:
         limits:

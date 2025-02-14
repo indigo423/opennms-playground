@@ -7,6 +7,8 @@ services:
 
   onms-hzn-core:
     depends_on:
+      database:
+        condition: service_healthy
       elasticsearch:
         condition: service_healthy
       mimir:

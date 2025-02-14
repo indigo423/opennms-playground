@@ -49,9 +49,9 @@ datasources:
     access: proxy
     database: opennms
     url: database:5432
-    user: postgres
+    user: opennms
     secureJsonData:
-      password: postgres
+      password: Cux2j4WEA59j28WF5Kt%
     jsonData:
       postgresVersion: 1500
       sslmode: disable
