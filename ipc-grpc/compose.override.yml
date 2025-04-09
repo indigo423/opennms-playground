@@ -6,6 +6,7 @@ services:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     ports:
       - "8980:8980/tcp"
+      - "8990:8990/tcp"
   
   minion:
     depends_on:
@@ -14,5 +15,5 @@ services:
     volumes:
       - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
     ports:
-      - "514:1514/udp"
       - "162:1162/udp"
+      - "514:1514/udp"

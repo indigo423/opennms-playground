@@ -4,7 +4,7 @@ include:
   - ../include/pgadmin.yml
   - ../include/mimir.yml
   - ../include/elasticsearch.yml
-  - ../include/kafka-broker.yml
+  - ../include/kafka.yml
   - ../include/onms-hzn-core.yml
   - ../include/onms-hzn-minion.yml
   - ../include/grafana.yml

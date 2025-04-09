@@ -2,7 +2,7 @@
 include:
   - ../include/database.yml
   - ../include/pgadmin.yml
-  - ../include/kafka-broker.yml
+  - ../include/kafka.yml
   - ../include/jaeger.yml
   - ../include/onms-hzn-core.yml
   - ../include/onms-hzn-minion.yml
