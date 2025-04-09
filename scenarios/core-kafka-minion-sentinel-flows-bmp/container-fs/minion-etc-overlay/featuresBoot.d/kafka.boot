@@ -1,1 +1,0 @@
-opennms-core-ipc-kafka

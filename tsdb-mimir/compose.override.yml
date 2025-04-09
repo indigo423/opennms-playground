@@ -7,8 +7,6 @@ services:
 
   core:
     depends_on:
-      database:
-        condition: service_healthy
       mimir:
         condition: service_started
     volumes:

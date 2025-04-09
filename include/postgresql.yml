@@ -1,0 +1,29 @@
+---
+services:
+
+  database:
+    image: postgres:15
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 512m
+    environment:
+      TZ: UTC
+      POSTGRES_HOST: database
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: VRL7FhR@mGw@djhS2A4
+    volumes:
+      - data-pg:/var/lib/postgresql/data
+    command: [ "postgres", "-c", "max_connections=250" ]
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 1s
+      timeout: 1s
+      retries: 10
+    ports:
+      - "5432/tcp"
+
+volumes:
+  data-pg: {}

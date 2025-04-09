@@ -1,0 +1,12 @@
+---
+include:
+  - ../include/timescaledb.yml
+  - ../include/prometheus.yml
+  - ../include/elasticsearch.yml
+  - ../include/pgadmin.yml
+  - ../include/kafka.yml
+  - ../include/jaeger.yml
+  - ../include/grafana.yml
+  - ../include/onms-hzn-core.yml
+  - ../include/onms-hzn-minion.yml
+  - ../include/onms-hzn-sentinel.yml

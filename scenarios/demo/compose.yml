@@ -1,7 +1,7 @@
 ---
 include:
   - ../../include/elasticsearch.yml
-  - ../../include/database.yml
+  - ../../include/postgresql.yml
   - ../../include/kafka.yml
   - ../../include/onms-hzn-core.yml
   - ../../include/onms-hzn-minion.yml

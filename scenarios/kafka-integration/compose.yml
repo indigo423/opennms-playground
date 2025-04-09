@@ -1,5 +1,5 @@
 ---
 include:
-  - ../../include/database.yml
+  - ../../include/postgresql.yml
   - ../../include/kafka.yml
   - ../../include/onms-hzn-core.yml

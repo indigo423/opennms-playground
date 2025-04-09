@@ -46,4 +46,4 @@ datasources:
       sslmode: disable
       tlsAuth: false
       tlsSkipVerify: true
-      timescaledb: true
+      timescaledb: false

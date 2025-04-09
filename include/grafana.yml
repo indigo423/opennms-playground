@@ -6,8 +6,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: 1.0
-          memory: 256m
+          cpus: 2.0
+          memory: 512m
     environment:
       TZ: UTC
       GF_SECURITY_ADMIN_USER: admin

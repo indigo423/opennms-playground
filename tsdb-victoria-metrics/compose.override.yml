@@ -7,8 +7,6 @@ services:
 
   core:
     depends_on:
-      database:
-        condition: service_healthy
       victoria-metrics:
         condition: service_started
     volumes:

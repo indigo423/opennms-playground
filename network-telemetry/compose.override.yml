@@ -1,0 +1,62 @@
+---
+services:
+
+  prometheus:
+    ports:
+      - "9090:9090/tcp"
+
+  kafka:
+    ports:
+      - "9092:9092/tcp"
+
+  kafka-ui:
+    ports:
+      - "8080:8080/tcp"
+
+  grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - "3000:3000/tcp"
+
+  kibana:
+    ports:
+      - "5601:5601/tcp"
+
+  core:
+    depends_on:
+      kafka:
+        condition: service_healthy
+      prometheus:
+        condition: service_started
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+    post_start: # Install TimescaleDB extension
+      - command:
+          - sleep
+          - "10"
+      - command:
+          - /opt/opennms/bin/install
+          - -Sdt
+    ports:
+      - "8101:8101/tcp"   # Karaf Shell
+      - "8980:8980/tcp"   # Web UI
+
+  minion:
+    depends_on:
+      kafka:
+        condition: service_healthy
+    volumes:
+      - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
+    ports:
+      - "8201:8201/tcp"   # Karaf Shell
+      - "162:1162/udp"    # SNMP Trap listener
+      - "514:1514/udp"    # Syslog listener
+      - "9999:9999/udp"   # sFlow, NetFlow v5,v9 and IPFIX listener
+      - "11019:11019/tcp" # BMP listener
+
+  sentinel:
+    volumes:
+      - ./container-fs/sentinel-etc-overlay:/opt/sentinel-etc-overlay
+    ports:
+      - "8301:8301/tcp"   # Karaf Shell

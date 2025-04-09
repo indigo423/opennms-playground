@@ -3,6 +3,11 @@ services:
 
   kafka:
     image: apache/kafka:3.9.0
+    deploy:
+      resources:
+        limits:
+          cpus: 2.0
+          memory: 2g
     environment:
       KAFKA_KRAFT_MODE: "true"
       KAFKA_PROCESS_ROLES: "broker,controller"

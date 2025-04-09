@@ -3,6 +3,11 @@ services:
 
   jaeger:
     image: jaegertracing/jaeger:latest
+    deploy:
+      resources:
+        limits:
+          cpus: 1.0
+          memory: 256m
     environment:
       TZ: UTC
     ports:

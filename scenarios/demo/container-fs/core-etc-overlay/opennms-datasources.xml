@@ -15,8 +15,8 @@
                     database-name="opennms" 
                     class-name="org.postgresql.Driver" 
                     url="jdbc:postgresql://database:5432/opennms"
-                    user-name="${scv:postgres:username|opennms}"
-                    password="${scv:postgres:password|opennms}" />
+                    user-name="${scv:database:username|opennms}"
+                    password="${scv:database:password|opennms}" />
 
   <jdbc-data-source name="opennms-admin" 
                     database-name="template1" 

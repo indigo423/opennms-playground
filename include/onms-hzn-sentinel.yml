@@ -8,16 +8,14 @@ services:
         limits:
           cpus: 1.0
           memory: 4g
+    depends_on:
+      database:
+        condition: service_healthy
     environment:
       TZ: UTC
       JAEGER_ENDPOINT: http://jaeger:14268/api/traces
       JAVA_MIN_MEM: 512M
       JAVA_MAX_MEM: 2048M
     command: ["-f"]
-    healthcheck:
-      test: "/health.sh"
-      interval: 5s
-      timeout: 4s
-      retries: 20
     ports:
       - "8301/tcp"

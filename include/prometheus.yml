@@ -9,6 +9,11 @@ services:
 
   prometheus:
     image: quay.io/prometheus/prometheus:latest
+    deploy:
+      resources:
+        limits:
+          cpus: 2.0
+          memory: 512m
     depends_on:
       prometheus-init:
         condition: service_completed_successfully
