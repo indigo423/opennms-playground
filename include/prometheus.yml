@@ -14,9 +14,10 @@ services:
         condition: service_completed_successfully
     environment:
       TZ: UTC
-    command: [ "--config.file=/etc/prometheus/prometheus.yml",
-               "--web.enable-remote-write-receiver",
-               "--storage.tsdb.retention.time=90d" ]
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --web.enable-remote-write-receiver
+      - --storage.tsdb.retention.time=90d
     user: "65534"
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
