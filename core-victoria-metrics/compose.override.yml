@@ -1,15 +1,15 @@
 ---
 services:
 
-  mimir:
+  victoria-metrics:
     ports:
-      - "9090:9090/tcp"
+      - "8428:8428/tcp"
 
   core:
     depends_on:
       database:
         condition: service_healthy
-      mimir:
+      victoria-metrics:
         condition: service_started
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
@@ -19,6 +19,8 @@ services:
       - "8980:8980/tcp"
 
   grafana:
+    environment:
+      GF_INSTALL_PLUGINS: victoriametrics-metrics-datasource,opennms-opennms-app
     ports:
       - "3000:3000/tcp"
     volumes:

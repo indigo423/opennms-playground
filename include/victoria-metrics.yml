@@ -1,0 +1,16 @@
+---
+services:
+
+  victoria-metrics:
+    image: quay.io/victoriametrics/victoria-metrics:stable-scratch
+    environment:
+      TZ: UTC
+    command: [ "--storageDataPath=victoria-metrics-data",
+               "--selfScrapeInterval=5s" ]
+    volumes:
+      - data-victoria-metrics:/victoria-metrics-data
+    ports:
+      - "8428/tcp"
+
+volumes:
+  data-victoria-metrics: {}

@@ -8,3 +8,8 @@ services:
       - "8101:8101/tcp"
       - "8980:8980/tcp"
       - "162:1162/udp"
+  grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - "3000:3000/tcp"
