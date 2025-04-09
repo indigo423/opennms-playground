@@ -23,5 +23,6 @@ services:
       - data-prometheus:/prometheus/data
     ports:
       - "9090/tcp"
+
 volumes:
-  data-prom: {}
+  data-prometheus: {}
