@@ -1,0 +1,24 @@
+---
+services:
+
+  mimir:
+    ports:
+      - "9090:9090/tcp"
+
+  core:
+    depends_on:
+      database:
+        condition: service_healthy
+      mimir:
+        condition: service_started
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+      - ./container-fs/core-overlay:/opt/opennms-overlay
+    ports:
+      - "8101:8101/tcp"
+      - "8980:8980/tcp"
+
+  grafana:
+    ports:
+      - "3000:3000/tcp"
+

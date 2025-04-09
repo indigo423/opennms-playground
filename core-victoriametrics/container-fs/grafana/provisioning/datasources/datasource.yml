@@ -1,0 +1,60 @@
+---
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://mimir:9009/prometheus
+    jsonData:
+      httpMethod: POST
+      manageAlerts: false
+      prometheusType: Mimir
+      cacheLevel: 'High'
+      disableRecordingRules: false
+      incrementalQueryOverlapWindow: 10m
+  - name: OpenNMS Performance
+    type: opennms-performance-datasource
+    access: proxy
+    database: ""
+    orgId: 1
+    url: http://core:8980/opennms/
+    isDefault: true
+    basicAuth: true
+    basicAuthUser: admin
+    secureJsonData:
+      basicAuthPassword: admin
+  - name: OpenNMS Entity
+    type: opennms-entity-datasource
+    access: proxy
+    database: ""
+    orgId: 1
+    url: http://core:8980/opennms/
+    basicAuth: true
+    basicAuthUser: admin
+    secureJsonData:
+      basicAuthPassword: admin
+  - name: OpenNMS Flow
+    type: opennms-flow-datasource
+    access: proxy
+    database: ""
+    orgId: 1
+    url: http://core:8980/opennms/
+    basicAuth: true
+    basicAuthUser: admin
+    secureJsonData:
+      basicAuthPassword: admin
+  - name: postgres
+    type: postgres
+    access: proxy
+    database: opennms
+    url: database:5432
+    user: opennms
+    secureJsonData:
+      password: Cux2j4WEA59j28WF5Kt%
+    jsonData:
+      postgresVersion: 1500
+      sslmode: disable
+      tlsAuth: false
+      tlsSkipVerify: true
+      timescaledb: true
