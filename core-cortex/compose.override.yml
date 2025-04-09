@@ -1,0 +1,25 @@
+---
+services:
+
+  cortex:
+    ports:
+      - "9009:9009/tcp"
+
+  core:
+    depends_on:
+      database:
+        condition: service_healthy
+      cortex:
+        condition: service_healthy
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+      - ./container-fs/core-overlay:/opt/opennms-overlay
+    ports:
+      - "8101:8101/tcp"
+      - "8980:8980/tcp"
+
+  grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - "3000:3000/tcp"

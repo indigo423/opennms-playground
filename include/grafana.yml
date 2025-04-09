@@ -15,10 +15,10 @@ services:
       GF_INSTALL_PLUGINS: opennms-opennms-app
       GF_FEATURE_TOGGLES_ENABLE: nestedFolders
     volumes:
-      - data_grafana:/var/lib/grafana
+      - data-grafana:/var/lib/grafana
       - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
     ports:
       - "3000/tcp"
 
 volumes:
-  data_grafana: {}
+  data-grafana: {}
