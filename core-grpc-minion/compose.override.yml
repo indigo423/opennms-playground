@@ -1,15 +1,15 @@
 ---
 services:
 
-  onms-hzn-core:
+  core:
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     ports:
       - "8980:8980/tcp"
   
-  onms-hzn-minion:
+  minion:
     depends_on:
-      onms-hzn-core:
+      core:
         condition: service_healthy
     volumes:
       - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay

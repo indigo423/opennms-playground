@@ -4,3 +4,6 @@ include:
   - ../include/pgadmin.yml
   - ../include/kafka-broker.yml
   - ../include/jaeger.yml
+  - ../include/onms-hzn-core.yml
+  - ../include/onms-hzn-minion.yml
+

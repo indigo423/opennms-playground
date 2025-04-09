@@ -6,5 +6,5 @@ services:
     environment:
       TZ: UTC
     ports:
-      - "14268:14268/tcp"
-      - "16686:16686/tcp"
+      - "14268/tcp"
+      - "16686/tcp"

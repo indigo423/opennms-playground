@@ -5,7 +5,7 @@ services:
     ports:
       - "9090:9090/tcp"
 
-  onms-hzn-core:
+  core:
     depends_on:
       mimir:
         condition: service_started
@@ -18,7 +18,7 @@ services:
       - "8101:8101/tcp"
       - "8980:8980/tcp"
   
-  onms-hzn-minion:
+  minion:
     depends_on:
       kafka-broker:
         condition: service_started

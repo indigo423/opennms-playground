@@ -5,7 +5,7 @@ services:
     ports:
       - "9090:9090/tcp"
 
-  onms-hzn-core:
+  core:
     depends_on:
       elasticsearch:
         condition: service_healthy
@@ -24,7 +24,7 @@ services:
       - "8101:8101/tcp"
       - "8980:8980/tcp"
   
-  onms-hzn-minion:
+  minion:
     depends_on:
       kafka-broker:
         condition: service_started
@@ -39,7 +39,7 @@ services:
       - "162:1162/udp"
       - "514:1514/udp"
 
-  onms-hzn-sentinel:
+  sentinel:
     depends_on:
       database:
         condition: service_healthy

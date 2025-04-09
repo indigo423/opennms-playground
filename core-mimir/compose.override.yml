@@ -5,7 +5,7 @@ services:
     ports:
       - "9090:9090/tcp"
 
-  onms-hzn-core:
+  core:
     depends_on:
       database:
         condition: service_healthy

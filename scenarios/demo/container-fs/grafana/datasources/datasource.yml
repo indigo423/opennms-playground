@@ -6,7 +6,7 @@ datasources:
     access: proxy
     database: ""
     orgId: 1
-    url: http://onms-hzn-core:8980/opennms/
+    url: http://core:8980/opennms/
     isDefault: true
     basicAuth: true
     basicAuthUser: admin
@@ -17,7 +17,7 @@ datasources:
     access: proxy
     database: ""
     orgId: 1
-    url: http://onms-hzn-core:8980/opennms/
+    url: http://core:8980/opennms/
     basicAuth: true
     basicAuthUser: admin
     secureJsonData:
@@ -27,7 +27,7 @@ datasources:
     access: proxy
     database: ""
     orgId: 1
-    url: http://onms-hzn-core:8980/opennms/
+    url: http://core:8980/opennms/
     basicAuth: true
     basicAuthUser: admin
     secureJsonData:

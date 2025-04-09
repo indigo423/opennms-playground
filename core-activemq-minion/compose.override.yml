@@ -5,7 +5,7 @@ services:
     volumes:
       - ./container-fs/activemq/activemq-config.xml:/opt/activemq/conf/activemq-config.xml
   
-  onms-hzn-core:
+  core:
     depends_on:
       activemq:
         condition: service_started
@@ -14,7 +14,7 @@ services:
     ports:
       - "8980:8980/tcp"
   
-  onms-hzn-minion:
+  minion:
     depends_on:
       activemq:
         condition: service_started

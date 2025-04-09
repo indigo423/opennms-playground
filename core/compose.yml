@@ -1,5 +1,0 @@
----
-include:
-  - ../include/database.yml
-  - ../include/pgadmin.yml
-  - ../include/onms-hzn-core.yml

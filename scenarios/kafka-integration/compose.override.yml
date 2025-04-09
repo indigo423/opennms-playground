@@ -1,7 +1,7 @@
 ---
 services:
 
-  onms-hzn-core:
+  core:
     depends_on:
       kafka-broker:
         condition: service_started

@@ -33,7 +33,7 @@ services:
       TZ: UTC
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
     ports:
-      - "5601:5601/tcp"
+      - "5601/tcp"
     healthcheck:
       test: curl http://localhost:5601 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
       interval: 30s

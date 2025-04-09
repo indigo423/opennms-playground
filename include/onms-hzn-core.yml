@@ -1,8 +1,8 @@
 ---
 services:
 
-  onms-hzn-core:
-    image: opennms/horizon:33.1.4
+  core:
+    image: opennms/horizon:latest
     deploy:
       resources:
         limits:
@@ -16,8 +16,8 @@ services:
       JAEGER_ENDPOINT: http://jaeger:14268/api/traces
     command: ["-s"]
     volumes:
-      - data_onms_hzn_cfg:/opt/opennms/etc
-      - data_onms_hzn:/opennms-data
+      - data-onms-hzn-cfg:/opt/opennms/etc
+      - data-onms-hzn:/opennms-data
     ports:
       - "8101/tcp"
       - "8980/tcp"
@@ -30,5 +30,5 @@ services:
       retries: 20
 
 volumes:
-  data_onms_hzn_cfg: {}
-  data_onms_hzn: {}
+  data-onms-hzn-cfg: {}
+  data-onms-hzn: {}

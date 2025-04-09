@@ -1,15 +1,26 @@
 ---
 services:
 
-  prometheus:
-    image: prom/prometheus
-    deploy:
-      resources:
-        limits:
-          cpus: 1.0
-          memory: 512m
+  prometheus-init:
+    image: busybox
+    command: ["sh", "-c", "chown -R 65534:65534 /prometheus/data"]
     volumes:
-      - data-prom:/prometheus
+      - data-prometheus:/prometheus/data
+
+  prometheus:
+    image: quay.io/prometheus/prometheus:latest
+    depends_on:
+      prometheus-init:
+        condition: service_completed_successfully
+    environment:
+      TZ: UTC
+    command: [ "--config.file=/etc/prometheus/prometheus.yml",
+               "--web.enable-remote-write-receiver",
+               "--storage.tsdb.retention.time=90d" ]
+    user: "65534"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - data-prometheus:/prometheus/data
     ports:
       - "9090/tcp"
 volumes:

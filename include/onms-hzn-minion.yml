@@ -1,8 +1,8 @@
 ---
 services:
   
-  onms-hzn-minion:
-    image: opennms/minion:33.1.4
+  minion:
+    image: opennms/minion:latest
     deploy:
       resources:
         limits:

@@ -24,7 +24,7 @@ services:
         ipv4_address: 172.30.0.10
         ipv6_address: fd23:9695:aa65:fff0::10
 
-  onms-hzn-core:
+  core:
     depends_on:
       kafka-broker:
         condition: service_started
@@ -49,7 +49,7 @@ services:
     ports:
       - "3000:3000/tcp"
   
-  onms-hzn-minion:
+  minion:
     volumes:
       - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
     networks:

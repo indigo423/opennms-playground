@@ -1,7 +1,11 @@
 ---
 services:
+  
+  kafka-broker:
+    ports:
+      - "9092:9092/tcp"
 
-  onms-hzn-core:
+  core:
     depends_on:
       kafka-broker:
         condition: service_started
@@ -10,7 +14,7 @@ services:
     ports:
       - "8980:8980/tcp"
   
-  onms-hzn-minion:
+  minion:
     depends_on:
       kafka-broker:
         condition: service_started
