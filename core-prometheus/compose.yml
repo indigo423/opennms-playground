@@ -2,6 +2,6 @@
 include:
   - ../include/database.yml
   - ../include/pgadmin.yml
-  - ../include/mimir.yml
+  - ../include/prometheus.yml
   - ../include/onms-hzn-core.yml
   - ../include/grafana.yml

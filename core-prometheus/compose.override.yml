@@ -1,7 +1,7 @@
 ---
 services:
 
-  mimir:
+  prometheus:
     ports:
       - "9090:9090/tcp"
 
@@ -9,7 +9,7 @@ services:
     depends_on:
       database:
         condition: service_healthy
-      mimir:
+      prometheus:
         condition: service_started
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
@@ -19,6 +19,7 @@ services:
       - "8980:8980/tcp"
 
   grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     ports:
       - "3000:3000/tcp"
-

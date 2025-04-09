@@ -5,15 +5,16 @@ datasources:
   - name: Prometheus
     type: prometheus
     access: proxy
-    url: http://mimir:9009/prometheus
+    url: http://prometheus:9090
     jsonData:
       httpMethod: POST
       manageAlerts: false
-      prometheusType: Mimir
-      cacheLevel: 'High'
+      prometheusType: Prometheus
+      prometheusVersion: "> 2.50.x"
+      cacheLevel: 'Low'
       disableRecordingRules: false
       incrementalQueryOverlapWindow: 10m
-  - name: ONMS Performance
+  - name: OpenNMS Performance
     type: opennms-performance-datasource
     access: proxy
     database: ""
@@ -24,7 +25,7 @@ datasources:
     basicAuthUser: admin
     secureJsonData:
       basicAuthPassword: admin
-  - name: ONMS Entity
+  - name: OpenNMS Entity
     type: opennms-entity-datasource
     access: proxy
     database: ""
