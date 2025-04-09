@@ -32,7 +32,7 @@ datasources:
     basicAuthUser: admin
     secureJsonData:
       basicAuthPassword: admin
-  - name: postgres
+  - name: PostgreSQL
     type: postgres
     access: proxy
     database: opennms
