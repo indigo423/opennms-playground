@@ -37,8 +37,8 @@
     <Routing name="RoutingAppender">
       <Routes pattern="$${ctx:prefix}">
         <Route>
-          <RollingFile name="Rolling-${ctx:prefix}" fileName="${logdir}/${ctx:prefix}.log"
-                       filePattern="${logdir}/${ctx:prefix}.%i.log.gz">
+          <RollingFile name="Rolling-\${ctx:prefix}" fileName="\${logdir}/\${ctx:prefix}.log"
+                       filePattern="\${logdir}/\${ctx:prefix}.%i.log.gz">
             <PatternLayout>
               <pattern>%d %-5p [%t] %c{1.}: %m%n</pattern>
             </PatternLayout>
