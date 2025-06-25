@@ -1,7 +1,7 @@
 ---
 services:
 
-  kafka-broker:
+  kafka:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.3
@@ -26,7 +26,7 @@ services:
 
   core:
     depends_on:
-      kafka-broker:
+      kafka:
         condition: service_started
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay

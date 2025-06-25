@@ -1,0 +1,1230 @@
+2025-06-17 21:40:25,782 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1512b4a4: startup date [Tue Jun 17 21:40:25 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 21:40:25,784 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 21:40:25,800 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 21:40:25,807 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:40:25,903 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3906b7a0: startup date [Tue Jun 17 21:40:25 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:40:25,903 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 21:40:25,911 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 21:40:25,919 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:43:33,059 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 21:40:25 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:43:33,060 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 21:43:53,277 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44398358: startup date [Tue Jun 17 21:43:53 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 21:43:53,278 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 21:43:53,285 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 21:43:53,291 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:43:53,385 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@47c98c1: startup date [Tue Jun 17 21:43:53 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:43:53,386 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 21:43:53,395 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 21:43:53,417 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:49:22,544 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 21:43:53 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:49:22,544 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 21:49:42,559 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c3f095: startup date [Tue Jun 17 21:49:42 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 21:49:42,560 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 21:49:42,569 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 21:49:42,576 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:49:42,662 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@47e83917: startup date [Tue Jun 17 21:49:42 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:49:42,662 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 21:49:42,669 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 21:49:42,678 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:54:05,467 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 21:49:42 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:54:05,468 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 21:54:25,629 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@765e931c: startup date [Tue Jun 17 21:54:25 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 21:54:25,630 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 21:54:25,652 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 21:54:25,658 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:54:25,761 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c678716: startup date [Tue Jun 17 21:54:25 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:54:25,761 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 21:54:25,769 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 21:54:25,777 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:58:22,490 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 21:54:25 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:58:22,491 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 21:58:49,858 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6239b171: startup date [Tue Jun 17 21:58:49 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 21:58:49,859 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 21:58:49,876 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 21:58:49,897 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 21:58:49,999 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75e7930a: startup date [Tue Jun 17 21:58:49 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 21:58:49,999 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 21:58:50,007 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 21:58:50,016 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:02:51,526 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 21:58:49 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:02:51,527 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:03:11,554 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21ca12db: startup date [Tue Jun 17 22:03:11 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:03:11,555 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:03:11,563 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:03:11,568 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:03:11,648 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c2ab3e0: startup date [Tue Jun 17 22:03:11 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:03:11,649 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:03:11,656 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:03:11,665 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:10:08,974 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:03:11 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:10:08,974 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:10:29,799 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@718ac7a8: startup date [Tue Jun 17 22:10:29 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:10:29,800 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:10:29,808 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:10:29,813 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:10:29,909 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4b27e95d: startup date [Tue Jun 17 22:10:29 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:10:29,909 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:10:29,916 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:10:29,924 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:12:32,346 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:10:29 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:12:32,346 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:12:55,197 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b02a262: startup date [Tue Jun 17 22:12:55 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:12:55,198 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:12:55,206 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:12:55,213 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:12:55,313 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c7eb9e2: startup date [Tue Jun 17 22:12:55 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:12:55,313 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:12:55,320 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:12:55,330 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:38:31,217 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:12:55 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:38:31,218 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:38:51,067 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@57eff374: startup date [Tue Jun 17 22:38:51 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:38:51,068 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:38:51,076 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:38:51,082 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:38:51,165 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3b37f8aa: startup date [Tue Jun 17 22:38:51 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:38:51,165 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:38:51,172 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:38:51,180 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:46:56,923 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:38:51 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:46:56,923 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:47:16,633 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2ffc4cb2: startup date [Tue Jun 17 22:47:16 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:47:16,634 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:47:16,641 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:47:16,647 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:47:16,731 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7d048cfb: startup date [Tue Jun 17 22:47:16 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:47:16,731 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:47:16,739 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:47:16,747 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:58:27,880 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:47:16 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:58:27,880 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 22:58:47,559 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d6e5841: startup date [Tue Jun 17 22:58:47 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 22:58:47,560 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 22:58:47,568 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 22:58:47,574 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 22:58:47,654 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f764a70: startup date [Tue Jun 17 22:58:47 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 22:58:47,655 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 22:58:47,662 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 22:58:47,670 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:04:31,580 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 22:58:47 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:04:31,580 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 23:04:51,679 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@32149b55: startup date [Tue Jun 17 23:04:51 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 23:04:51,680 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 23:04:51,688 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 23:04:51,693 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:04:51,779 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@b5372d5: startup date [Tue Jun 17 23:04:51 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:04:51,779 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 23:04:51,786 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 23:04:51,794 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:09:08,520 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 23:04:51 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:09:08,520 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 23:09:28,641 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@670212cb: startup date [Tue Jun 17 23:09:28 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 23:09:28,642 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 23:09:28,649 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 23:09:28,654 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:09:28,733 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e8f05c5: startup date [Tue Jun 17 23:09:28 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:09:28,734 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 23:09:28,740 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 23:09:28,748 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:13:19,293 INFO  [Thread-0] o.s.c.s.ClassPathXmlApplicationContext: Closing ApplicationContext 'pollerdContext': startup date [Tue Jun 17 23:09:28 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:13:19,293 WARN  [Thread-0] o.s.b.f.s.DisposableBeanAdapter: Invocation of destroy method failed on bean with name 'org.opennms.core.soa.support.ServiceFactoryBean#0': java.lang.IllegalStateException: Service already unregistered.
+2025-06-17 23:13:39,329 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15641c0f: startup date [Tue Jun 17 23:13:39 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-17 23:13:39,330 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-17 23:13:39,337 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-17 23:13:39,343 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-17 23:13:39,427 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@24074979: startup date [Tue Jun 17 23:13:39 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-17 23:13:39,428 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-17 23:13:39,435 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-17 23:13:39,457 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-18 11:46:46,795 WARN  [pool-20-thread-94] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:46:46,802 WARN  [pool-20-thread-94] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:46:50,410 WARN  [Timer-2848] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=1423049512
+2025-06-18 11:46:50,413 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:47:24,398 WARN  [Timer-2855] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=123481131
+2025-06-18 11:47:24,400 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:47:58,422 WARN  [Timer-2863] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=918040293
+2025-06-18 11:47:58,423 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:48:32,436 WARN  [Timer-2870] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=1037907074
+2025-06-18 11:48:32,436 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:49:06,465 WARN  [Timer-2878] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=1349785702
+2025-06-18 11:49:06,468 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:49:40,496 WARN  [Timer-2886] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=837901683
+2025-06-18 11:49:40,497 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:50:14,520 WARN  [Timer-2894] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=2119957055
+2025-06-18 11:50:14,521 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:50:48,533 WARN  [Timer-2901] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=569482300
+2025-06-18 11:50:48,534 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:51:22,553 WARN  [Timer-2909] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=499412114
+2025-06-18 11:51:22,554 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:51:28,964 WARN  [pool-20-thread-94] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:51:28,967 WARN  [pool-20-thread-94] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:51:56,579 WARN  [Timer-2916] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=1424071270
+2025-06-18 11:51:56,579 ERROR [pool-20-thread-94] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 11:56:29,156 WARN  [pool-20-thread-95] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:56:29,158 WARN  [pool-20-thread-95] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 11:57:00,766 WARN  [Timer-2976] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=1823595863
+2025-06-18 11:57:00,766 ERROR [pool-20-thread-95] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:11:32,875 WARN  [pool-20-thread-98] o.o.n.p.m.HttpMonitor: checkStatus: No route to host exception while polling /192.0.2.21:HTTPS:443
+java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:11:35,945 WARN  [pool-20-thread-98] o.o.n.p.m.HttpMonitor: checkStatus: No route to host exception while polling /192.0.2.21:HTTPS:443
+java.net.NoRouteToHostException: No route to host
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:17:05,618 WARN  [Timer-3213] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=2050609655
+2025-06-18 12:17:05,621 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:20:28,364 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:20:28,366 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:20:31,995 WARN  [Timer-3254] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=102456372
+2025-06-18 12:20:31,996 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:20:32,244 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTP:80
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:20:32,244 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTP:80
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:20:39,039 WARN  [Timer-3256] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=390421418
+2025-06-18 12:20:39,041 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:20:58,455 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:20:58,459 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:21:13,061 WARN  [Timer-3264] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=160761971
+2025-06-18 12:21:13,063 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:21:29,468 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:21:29,472 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:21:58,081 WARN  [Timer-3274] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=71578663
+2025-06-18 12:21:58,082 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:22:00,485 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:22:00,487 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:22:32,102 WARN  [Timer-3281] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=544098782
+2025-06-18 12:22:32,105 ERROR [pool-20-thread-99] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:22:36,538 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:22:36,540 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:23:07,524 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:23:07,527 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:23:38,537 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:23:38,539 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:24:15,558 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:24:15,559 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:24:51,580 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:24:51,583 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:25:35,616 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:25:35,619 WARN  [pool-20-thread-99] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:27:36,286 WARN  [Timer-3341] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=506213755
+2025-06-18 12:27:36,287 ERROR [pool-20-thread-101] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-18 12:30:35,794 WARN  [pool-20-thread-102] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:30:35,797 WARN  [pool-20-thread-102] o.o.n.p.m.HttpMonitor: Connection exception for /192.0.2.21:HTTPS:443
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor$HttpMonitorClient.connect(HttpMonitor.java:415) ~[opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.HttpMonitor.poll(HttpMonitor.java:143) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-06-18 12:32:40,515 WARN  [Timer-3401] o.o.n.s.s.Snmp4JStrategy: processResponse: Timeout.  Agent: SnmpAgentConfig[Address: 192.0.2.21, ProxyForAddress: null, Port: 161, Timeout: 1800, Retries: 1, MaxVarsPerPdu: 10, MaxRepetitions: 2, MaxRequestSize: 65535, Version: v2c, TTL: null, ReadCommunity: XXXXXXXX, WriteCommunity: XXXXXXXX], requestID=212170043
+2025-06-18 12:32:40,517 ERROR [pool-20-thread-103] o.o.n.s.s.Snmp4JStrategy: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+java.util.concurrent.ExecutionException: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.send(Snmp4JStrategy.java:329) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.buildAndSendPdu(Snmp4JStrategy.java:318) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:252) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.get(Snmp4JStrategy.java:233) [org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.SnmpUtils.get(SnmpUtils.java:81) [org.opennms.core.snmp.api-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.monitors.SnmpMonitor.poll(SnmpMonitor.java:222) [opennms-services-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:70) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at org.opennms.netmgt.poller.client.rpc.PollerClientRpcModule$1.get(PollerClientRpcModule.java:64) [org.opennms.features.poller.client-rpc-33.1.7.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpException: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:366) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+Caused by: org.opennms.netmgt.snmp.SnmpAgentTimeoutException: Timeout retrieving response for 192.0.2.21.
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy.processResponse(Snmp4JStrategy.java:439) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.opennms.netmgt.snmp.snmp4j.Snmp4JStrategy$2.onResponse(Snmp4JStrategy.java:364) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at org.snmp4j.Snmp$PendingRequest.run(Snmp.java:1878) ~[org.opennms.core.snmp.implementations.snmp4j-33.1.7.jar:?]
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566) ~[?:?]
+	at java.base/java.util.TimerThread.run(Timer.java:516) ~[?:?]
+2025-06-25 14:09:29,458 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@135cf89d: startup date [Wed Jun 25 14:09:29 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-25 14:09:29,459 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-25 14:09:29,478 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-25 14:09:29,486 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:09:29,582 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a151e95: startup date [Wed Jun 25 14:09:29 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-25 14:09:29,582 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-25 14:09:29,590 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-25 14:09:29,600 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:10:07,184 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB-Stats on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:10:07,186 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB-Stats found no active service
+2025-06-25 14:10:07,195 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:10:07,195 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB found no active service
+2025-06-25 14:18:46,902 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@768add00: startup date [Wed Jun 25 14:18:46 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-25 14:18:46,904 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-25 14:18:46,913 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-25 14:18:46,920 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:18:47,007 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1d102b3e: startup date [Wed Jun 25 14:18:47 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-25 14:18:47,007 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-25 14:18:47,014 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-25 14:18:47,024 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:19:24,406 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:19:24,407 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB found no active service
+2025-06-25 14:19:24,482 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB-Stats on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:19:24,482 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB-Stats found no active service
+2025-06-25 14:29:47,408 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d7e2eda: startup date [Wed Jun 25 14:29:47 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-25 14:29:47,410 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-25 14:29:47,417 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-25 14:29:47,424 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:29:47,536 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@18fc2b54: startup date [Wed Jun 25 14:29:47 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-25 14:29:47,536 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-25 14:29:47,566 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-25 14:29:47,575 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:30:24,912 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:30:24,913 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB found no active service
+2025-06-25 14:30:25,311 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB-Stats on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:30:25,312 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB-Stats found no active service
+2025-06-25 14:33:33,838 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13f083c9: startup date [Wed Jun 25 14:33:33 UTC 2025]; parent: ApplicationContext 'pollerConfigContext'
+2025-06-25 14:33:33,840 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholding.xml]
+2025-06-25 14:33:33,848 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-thresholdingConfigDaos.xml]
+2025-06-25 14:33:33,856 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:33:33,950 INFO  [Main] o.s.c.s.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d192f53: startup date [Wed Jun 25 14:33:33 UTC 2025]; parent: ApplicationContext 'thresholdingContext'
+2025-06-25 14:33:33,950 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-pollerd.xml]
+2025-06-25 14:33:33,957 INFO  [Main] o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [META-INF/opennms/applicationContext-rpc-poller.xml]
+2025-06-25 14:33:33,967 INFO  [Main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2025-06-25 14:34:11,329 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB-Stats on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:34:11,330 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB-Stats found no active service
+2025-06-25 14:34:11,404 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Active service OpenNMS-DB on 127.0.0.1 not configured for any package. Marking as Not Polled.
+2025-06-25 14:34:11,404 WARN  [Poller:PollerEventProcessor-Thread] o.o.n.p.Poller: Attempt to schedule service 1/127.0.0.1/OpenNMS-DB found no active service

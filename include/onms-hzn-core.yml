@@ -2,6 +2,7 @@
 services:
 
   core:
+    #image: quay.io/bluebird/core-snapshot:latest
     image: opennms/horizon:latest
     deploy:
       resources:
