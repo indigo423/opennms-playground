@@ -12,7 +12,6 @@ services:
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
       - ./container-fs/core-overlay:/opt/opennms-overlay
-      - ./container-fs/core-logs:/opt/opennms/logs
     ports:
       - "8101:8101/tcp"
       - "8980:8980/tcp"

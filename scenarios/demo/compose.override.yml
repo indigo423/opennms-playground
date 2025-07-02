@@ -18,6 +18,14 @@ services:
       - "9200:9200/tcp"
       - "9300:9300/tcp"
 
+  kibana:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.5
+        ipv6_address: fd23:9695:aa65:fff0::5
+    ports:
+      - "5601:5601/tcp"
+
   database:
     networks:
       net.stuttgart:
@@ -28,6 +36,8 @@ services:
     depends_on:
       kafka:
         condition: service_started
+    environment:
+      PROM_JMX_EXPORTER_ENABLED: trUE
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     networks:
@@ -37,18 +47,31 @@ services:
     ports:
       - "8980:8980/tcp"
   
-  grafana:
+  sentinel:
+    depends_on:
+      kafka:
+        condition: service_started
+    volumes:
+      - ./container-fs/sentinel-etc-overlay:/opt/sentinel-etc-overlay
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.13
         ipv6_address: fd23:9695:aa65:fff0::13
+    ports:
+      - "8301:8301/tcp"
+
+  grafana:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.14
+        ipv6_address: fd23:9695:aa65:fff0::14
     environment:
       GF_INSTALL_PLUGINS: opennms-opennms-app,grafana-piechart-panel,neocat-cal-heatmap-panel,briangann-datatable-panel
     volumes:
        - ./container-fs/grafana:/etc/grafana/provisioning/
     ports:
       - "3000:3000/tcp"
-  
+
   minion:
     volumes:
       - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
@@ -59,6 +82,9 @@ services:
       net.fulda:
         ipv4_address: 172.31.0.12
         ipv6_address: fd23:9695:aa65:fff1::12
+    ports:
+      - "8201:8201/tcp"
+      - "9999:9999/udp"
 
   srv-stuttgart-01:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342

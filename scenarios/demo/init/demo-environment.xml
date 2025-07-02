@@ -19,8 +19,15 @@
     <asset name="latitude" value="48.8258763"/>
   </node>
 
+  <node location="Default" foreign-id="sentinel" node-label="sentinel">
+    <interface ip-addr="172.30.0.13" status="1" snmp-primary="N">
+    </interface>
+    <asset name="longitude" value="9.1685303"/>
+    <asset name="latitude" value="48.8258763"/>
+  </node>
+
   <node location="Default" foreign-id="grafana" node-label="grafana">
-    <interface ip-addr="172.30.0.13" status="1" snmp-primary="P">
+    <interface ip-addr="172.30.0.14" status="1" snmp-primary="P">
       <monitored-service service-name="ICMP"/>
     </interface>
     <asset name="longitude" value="9.1685303"/>

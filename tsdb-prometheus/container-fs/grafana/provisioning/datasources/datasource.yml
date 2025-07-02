@@ -10,7 +10,6 @@ datasources:
       httpMethod: POST
       manageAlerts: false
       prometheusType: Prometheus
-      prometheusVersion: '> 2.50.x'
       cacheLevel: 'Low'
       disableRecordingRules: false
       incrementalQueryOverlapWindow: 10m

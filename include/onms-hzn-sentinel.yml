@@ -11,6 +11,8 @@ services:
     depends_on:
       database:
         condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
     environment:
       TZ: UTC
       JAEGER_ENDPOINT: http://jaeger:14268/api/traces

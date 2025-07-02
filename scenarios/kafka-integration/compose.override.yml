@@ -3,7 +3,7 @@ services:
 
   core:
     depends_on:
-      kafka-broker:
+      kafka:
         condition: service_started
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
