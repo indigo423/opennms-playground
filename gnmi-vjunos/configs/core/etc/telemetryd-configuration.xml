@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<telemetryd-config>
+    <!-- OpenConfig -->
+    <connector name="OpenConfig-Connector"
+               class-name="org.opennms.netmgt.telemetry.protocols.openconfig.connector.OpenConfigConnector"
+               service-name="OpenConfig"
+               queue="OpenConfig"
+               enabled="true">
+        <package name="OpenConfig-Default">
+            <filter>IPADDR != '0.0.0.0'</filter>
+	    <parameter key="port" value="${requisition:oc.port|57400}"/>
+	    <parameter key="frequency" value="5000000000"/>
+	    <parameter key="origin" value="gnmi"/>
+            <parameter key="retries" value="5"/>
+            <parameter key="interval" value="10"/>
+            <parameter key="username" value="admin"/>
+            <parameter key="password" value="NokiaSrl1!"/>
+            <parameter key="tls.enabled" value="${requisition:oc.tls.enabled|true}"/>
+            <parameter key="tls.skip.verify" value="${requisition:oc.tls.skip.verify|false}"/>
+            <parameter key="paths" value="/interface[name=mgmt0]/statistics"/>
+         </package>
+    </connector>
+
+    <queue name="OpenConfig">
+        <adapter name="OpenConfig-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.openconfig.adapter.OpenConfigAdapter" enabled="true">
+	    <parameter key="script" value="/opt/opennms/etc/telemetryd-adapters/openconfig-gnmi-telemetry.groovy"/>
+            <package name="OpenConfig-Default">
+                <rrd step="300">
+                    <rra>RRA:AVERAGE:0.5:1:2016</rra>
+                    <rra>RRA:AVERAGE:0.5:12:1488</rra>
+                    <rra>RRA:AVERAGE:0.5:288:366</rra>
+                    <rra>RRA:MAX:0.5:288:366</rra>
+                    <rra>RRA:MIN:0.5:288:366</rra>
+                </rrd>
+            </package>
+        </adapter>
+    </queue>
+
+    <!-- Netflow v5 listener & adapters -->
+    <listener name="Netflow-5-UDP-8877" class-name="org.opennms.netmgt.telemetry.listeners.UdpListener" enabled="false">
+        <parameter key="port" value="8877"/>
+
+        <parser name="Netflow-5-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.Netflow5UdpParser" queue="Netflow-5" />
+    </listener>
+
+    <queue name="Netflow-5">
+        <adapter name="Netflow-5-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.netflow.adapter.netflow5.Netflow5Adapter" enabled="true">
+            <parameter key="applicationDataCollection" value="false"/>
+            <parameter key="applicationThresholding" value="false"/>
+            <package name="Netflow-5-Default">
+                <rrd step="300">
+                    <rra>RRA:AVERAGE:0.5:1:2016</rra>
+                    <rra>RRA:AVERAGE:0.5:12:1488</rra>
+                    <rra>RRA:AVERAGE:0.5:288:366</rra>
+                    <rra>RRA:MAX:0.5:288:366</rra>
+                    <rra>RRA:MIN:0.5:288:366</rra>
+                </rrd>
+            </package>
+        </adapter>
+    </queue>
+
+    <!-- Netflow v9 listener & adapters -->
+    <listener name="Netflow-9-UDP-4729" class-name="org.opennms.netmgt.telemetry.listeners.UdpListener" enabled="false">
+        <parameter key="port" value="4729"/>
+
+        <parser name="Netflow-9-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.Netflow9UdpParser" queue="Netflow-9" />
+    </listener>
+
+    <queue name="Netflow-9">
+        <adapter name="Netflow-9-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.netflow.adapter.netflow9.Netflow9Adapter" enabled="true">
+            <parameter key="applicationDataCollection" value="false"/>
+            <parameter key="applicationThresholding" value="false"/>
+            <package name="Netflow-9-Default">
+                <rrd step="300">
+                    <rra>RRA:AVERAGE:0.5:1:2016</rra>
+                    <rra>RRA:AVERAGE:0.5:12:1488</rra>
+                    <rra>RRA:AVERAGE:0.5:288:366</rra>
+                    <rra>RRA:MAX:0.5:288:366</rra>
+                    <rra>RRA:MIN:0.5:288:366</rra>
+                </rrd>
+            </package>
+        </adapter>
+    </queue>
+
+    <!-- IPFIX listener & adapters -->
+    <listener name="IPFIX-UDP-4730" class-name="org.opennms.netmgt.telemetry.listeners.UdpListener" enabled="false">
+        <parameter key="port" value="4730"/>
+
+        <parser name="IPFIX-UDP-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.IpfixUdpParser" queue="IPFIX" />
+    </listener>
+
+    <listener name="IPFIX-TCP-4730" class-name="org.opennms.netmgt.telemetry.listeners.TcpListener" enabled="false">
+        <parameter key="port" value="4730"/>
+
+        <parser name="IPFIX-TCP-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.IpfixTcpParser" queue="IPFIX" />
+    </listener>
+
+    <queue name="IPFIX">
+        <adapter name="IPFIX-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.netflow.adapter.ipfix.IpfixAdapter" enabled="true">
+            <parameter key="applicationDataCollection" value="false"/>
+            <parameter key="applicationThresholding" value="false"/>
+            <package name="IPFIX-Default">
+                <rrd step="300">
+                    <rra>RRA:AVERAGE:0.5:1:2016</rra>
+                    <rra>RRA:AVERAGE:0.5:12:1488</rra>
+                    <rra>RRA:AVERAGE:0.5:288:366</rra>
+                    <rra>RRA:MAX:0.5:288:366</rra>
+                    <rra>RRA:MIN:0.5:288:366</rra>
+                </rrd>
+            </package>
+        </adapter>
+    </queue>
+
+
+    <!-- Multi-port listener for Netflow v5, Netflow v9, IPFIX and SFlow -->
+    <listener name="Multi-UDP-9999" class-name="org.opennms.netmgt.telemetry.listeners.UdpListener" enabled="true">
+        <parameter key="port" value="9999"/>
+
+        <parser name="Netflow-5-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.Netflow5UdpParser" queue="Netflow-5" />
+        <parser name="Netflow-9-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.Netflow9UdpParser" queue="Netflow-9" />
+        <parser name="IPFIX-TCP-Parser" class-name="org.opennms.netmgt.telemetry.protocols.netflow.parser.IpfixUdpParser" queue="IPFIX" />
+    </listener>
+
+    <!-- BMP listener & adapters -->
+    <listener name="BMP-TCP-5000" class-name="org.opennms.netmgt.telemetry.listeners.TcpListener" enabled="false">
+        <parameter key="port" value="5000"/>
+
+        <parser name="BMP-TCP-Parser" class-name="org.opennms.netmgt.telemetry.protocols.bmp.parser.BmpParser" queue="BMP" />
+    </listener>
+
+    <queue name="BMP">
+        <adapter name="BMP-Peer-Status-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.bmp.adapter.BmpPeerStatusAdapter" enabled="false">
+        </adapter>
+
+        <adapter name="BMP-Telemetry-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.bmp.adapter.BmpTelemetryAdapter" enabled="false">
+           <package name="BMP-Default">
+              <rrd step="300">
+                 <rra>RRA:AVERAGE:0.5:1:2016</rra>
+                 <rra>RRA:AVERAGE:0.5:12:1488</rra>
+                 <rra>RRA:AVERAGE:0.5:288:366</rra>
+                 <rra>RRA:MAX:0.5:288:366</rra>
+                 <rra>RRA:MIN:0.5:288:366</rra>
+              </rrd>
+           </package>
+        </adapter>
+
+        <adapter name="BMP-OpenBMP-Integration-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.bmp.adapter.openbmp.BmpIntegrationAdapter" enabled="false">
+            <parameter key="kafka.bootstrap.servers" value="localhost:9092" />
+        </adapter>
+        <adapter name="BMP-Persisting-Adapter" class-name="org.opennms.netmgt.telemetry.protocols.bmp.adapter.BmpPersistingAdapter" enabled="false">
+        </adapter>
+    </queue>
+</telemetryd-config>

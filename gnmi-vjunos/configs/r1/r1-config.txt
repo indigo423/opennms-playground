@@ -1,0 +1,90 @@
+## Last changed: 2025-07-15 13:51:48 UTC
+version 24.2R1-S2.5;
+system {
+    host-name r1;
+    root-authentication {
+        encrypted-password "$6$awIc07L0$pO98Fea7PdfoKUE0mdIzZUbjJO1ffymnU6Ddy2dA9pc068U93uPuD6eWl.pGOeUY5nIhY0C7gSwkHYFgGarHQ."; ## SECRET-DATA
+    }
+    login {
+        user admin {
+            uid 2000;
+            class super-user;
+            authentication {
+                encrypted-password "$6$JQL5R48n$yoyN/3068qOqyjbEfuz/j15JK.DpzFHlfBhlEhMcDHvg/g2eHt3U6U4WISmkT5rOleRIdsU8SelCx3M8eCS2k1"; ## SECRET-DATA
+            }
+        }
+    }
+    services {
+        netconf {
+            ssh;
+        }
+        ssh {
+            root-login allow;
+        }
+        extension-service {
+            request-response {
+                grpc {
+                    ssl {
+                        port 9339;
+                        local-certificate r1-cert;
+                        hot-reloading;
+                        use-pki;
+                    }
+                }
+            }
+        }
+    }
+    management-instance;
+}
+chassis {
+    fpc 0 {
+        pic 0 {
+            number-of-ports 12;
+        }
+    }
+}
+services {
+    analytics {
+        export-profile core {
+            local-address 192.0.2.11;
+            local-port 21111;
+            reporting-rate 10;
+            format gpb-gnmi;
+            transport grpc;
+        }
+        sensor cpu {
+            export-name core;
+            resource /components/component/cpu/utilization;
+        }
+        sensor interface {
+            export-name core;
+            resource /interfaces/interface/state/counters;
+        }
+    }
+}
+interfaces {
+    fxp0 {
+        unit 0 {
+            family inet {
+                address 10.0.0.15/24;
+            }
+            family inet6 {
+                address 2001:db8::2/64;
+            }
+        }
+    }
+}
+routing-instances {
+    mgmt_junos {
+        routing-options {
+            rib mgmt_junos.inet6.0 {
+                static {
+                    route ::/0 next-hop 2001:db8::1;
+                }
+            }
+            static {
+                route 0.0.0.0/0 next-hop 10.0.0.2;
+            }
+        }
+    }
+}

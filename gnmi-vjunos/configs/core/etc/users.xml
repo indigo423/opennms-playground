@@ -1,0 +1,33 @@
+<userinfo xmlns="http://xmlns.opennms.org/xsd/users">
+   <header>
+      <rev>.9</rev>
+      <created>2025-07-14T14:42:59.304Z</created>
+      <mstation>master.nmanage.com</mstation>
+   </header>
+   <users>
+      <user>
+         <user-id>admin</user-id>
+         <full-name>Administrator</full-name>
+         <user-comments>Default administrator, do not delete</user-comments>
+         <password salt="true">njVpmqQj+j2mWjHmFIfJjJJhZLbQOfO+O0EjY+SVs3FU3pYX8qqABCPPzwxhG0qC</password>
+         <contact type="email"/>
+         <contact type="pagerEmail"/>
+         <contact type="xmppAddress"/>
+         <contact type="microblog"/>
+         <contact type="numericPage"/>
+         <contact type="textPage"/>
+         <contact type="workPhone"/>
+         <contact type="mobilePhone"/>
+         <contact type="homePhone"/>
+         <role>ROLE_ADMIN</role>
+         <role>ROLE_FILESYSTEM_EDITOR</role>
+      </user>
+      <user>
+         <user-id>rtc</user-id>
+         <full-name>RTC</full-name>
+         <user-comments>RTC user, do not delete</user-comments>
+         <password salt="true">sHMy+HycWKGJC/uUMF0IGlXUXP1KhcqD0GEchFlvYTw40jT9r+zMxOb3F+phWNzX</password>
+         <role>ROLE_RTC</role>
+      </user>
+   </users>
+</userinfo>
