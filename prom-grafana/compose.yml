@@ -1,0 +1,4 @@
+---
+include:
+  - ../include/prometheus.yml
+  - ../include/grafana.yml

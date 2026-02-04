@@ -16,7 +16,7 @@ services:
       GF_FEATURE_TOGGLES_ENABLE: nestedFolders
     volumes:
       - data-grafana:/var/lib/grafana
-      - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
+      - ./grafana/provisioning:/etc/grafana/provisioning
     ports:
       - "3000/tcp"
 
