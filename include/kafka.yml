@@ -2,7 +2,7 @@
 services:
 
   kafka:
-    image: apache/kafka:3.9.0
+    image: apache/kafka:4.1.1
     deploy:
       resources:
         limits:
@@ -30,7 +30,7 @@ services:
       retries: 10
 
   kafka-ui:
-    image: provectuslabs/kafka-ui:latest
+    image: ghcr.io/kafbat/kafka-ui:latest
     depends_on:
       kafka:
         condition: service_healthy
@@ -48,3 +48,4 @@ services:
 
 volumes:
   data-kafka: {}
+
