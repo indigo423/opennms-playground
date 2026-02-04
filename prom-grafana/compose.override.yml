@@ -1,0 +1,14 @@
+---
+services:
+  prometheus:
+    volumes:
+      - ./container-fs/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090/tcp"
+
+  grafana:
+    ports:
+      - "3000:3000/tcp"
+    volumes:
+      - ./container-fs/grafana/provisioning:/etc/grafana/provisioning
+
