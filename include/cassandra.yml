@@ -1,0 +1,30 @@
+---
+volumes:
+  data-cassandra-node: {}
+
+services:
+  cassandra-node:
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+    image: docker.io/cassandra:3
+    environment:
+      TZ: UTC
+      CASSANDRA_CLUSTER_NAME: opennms-newts
+      CASSANDRA_DC: opennms-lab
+      CASSANDRA_RACK: opennms-lab-rack
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 256M
+    volumes:
+      - ./cassandra/jmxremote.password:/etc/cassandra/jmxremote.password
+      - ./cassandra/jmxremote.access:/etc/cassandra/jmxremote.access
+      - data-cassandra-node:/var/lib/cassandra
+    healthcheck:
+      test: [ "CMD-SHELL", "[ $(nodetool -u cassandra -pw cassandra statusgossip) = \"running\" ] || exit 1" ]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+      start_period: 20s

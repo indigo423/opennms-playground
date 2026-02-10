@@ -1,0 +1,15 @@
+---
+services:
+  core:
+    depends_on:
+      cassandra-node:
+        condition: service_healthy
+    environment:
+      OPENNMS_TIMESERIES_STRATEGY: newts
+      REPLICATION_FACTOR: 1
+      OPENNMS_CASSANDRA_HOSTNAME: cassandra-node
+      OPENNMS_CASSANDRA_KEYSPACE: newts
+      OPENNMS_CASSANDRA_DATACENTER: opennms-lab
+      OPENNMS_CASSANDRA_PORT: 9042
+      OPENNMS_CASSANDRA_USERNAME: cassandra
+      OPENNMS_CASSANDRA_PASSWORD: cassandra
