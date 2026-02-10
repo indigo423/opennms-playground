@@ -12,6 +12,10 @@ services:
       database:
         condition: service_healthy
     environment:
+      POSTGRES_HOST: database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: VRL7FhR@mGw@djhS2A4
+      OPENNMS_RRD_STOREBYFOREIGNSOURCE: "true"
       TZ: UTC
       JAEGER_ENDPOINT: http://jaeger:14268/api/traces
     command: ["-s"]

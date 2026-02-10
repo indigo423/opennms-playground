@@ -10,7 +10,7 @@ services:
           cpus: 0.5
           memory: 512m
     environment:
-      TZ: 'UTC'
+      TZ: UTC
     volumes:
       - 'data_activemq:/opt/activemq/data'
     ports:

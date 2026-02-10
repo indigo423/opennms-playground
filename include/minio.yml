@@ -9,6 +9,7 @@ services:
       - "9000/tcp"
       - "9001/tcp"
     environment:
+      TZ: UTC
       MINIO_ROOT_USER: root
       MINIO_ROOT_PASSWORD: changeme!
     volumes:

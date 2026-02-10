@@ -3,6 +3,8 @@ services:
 
   mimir:
     image: grafana/mimir:latest
+    environment:
+      TZ: UTC
     command: ["-config.file=/etc/mimir-config.yaml"]
     volumes:
       - ./mimir/mimir-config.yaml:/etc/mimir-config.yaml

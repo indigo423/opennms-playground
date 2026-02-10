@@ -9,6 +9,7 @@ services:
           cpus: 2.0
           memory: 2g
     environment:
+      TZ: UTC
       KAFKA_KRAFT_MODE: "true"
       KAFKA_PROCESS_ROLES: "broker,controller"
       KAFKA_NODE_ID: 1
