@@ -1,0 +1,33 @@
+---
+services:
+  mimir:
+    ports:
+      - "9090:9090/tcp"
+
+  core:
+    depends_on:
+      cassandra-node:
+        condition: service_healthy
+      mimir:
+        condition: service_started
+    environment:
+      OPENNMS_TIMESERIES_STRATEGY: newts
+      REPLICATION_FACTOR: 1
+      OPENNMS_CASSANDRA_HOSTNAME: cassandra-node
+      OPENNMS_CASSANDRA_KEYSPACE: newts
+      OPENNMS_CASSANDRA_DATACENTER: opennms-lab
+      OPENNMS_CASSANDRA_PORT: 9042
+      OPENNMS_CASSANDRA_USERNAME: cassandra
+      OPENNMS_CASSANDRA_PASSWORD: cassandra
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+      - ./container-fs/core-overlay:/opt/opennms-overlay
+    ports:
+      - "8980:8980/tcp"
+      - "8101:8101/tcp"
+
+  grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - "3000:3000/tcp"

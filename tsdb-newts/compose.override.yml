@@ -13,3 +13,6 @@ services:
       OPENNMS_CASSANDRA_PORT: 9042
       OPENNMS_CASSANDRA_USERNAME: cassandra
       OPENNMS_CASSANDRA_PASSWORD: cassandra
+    ports:
+      - "8980:8980/tcp"
+      - "8101:8101/tcp"

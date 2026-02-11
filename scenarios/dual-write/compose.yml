@@ -1,11 +1,8 @@
 ---
 include:
-  - ../../include/elasticsearch.yml
-  - ../../include/postgresql.yml
-  - ../../include/kafka.yml
-  - ../../include/onms-hzn-core.yml
-  - ../../include/onms-hzn-minion.yml
-  - ../../include/onms-hzn-sentinel.yml
-  - ../../include/grafana.yml
+  - ../../include/cassandra.yml
+  - ../../include/mimir.yml
   - ../../include/prometheus.yml
-  - ../../include/jaeger.yml
+  - ../../include/postgresql.yml
+  - ../../include/onms-hzn-core.yml
+  - ../../include/grafana.yml
