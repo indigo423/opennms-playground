@@ -1,0 +1,34 @@
+---
+services:
+
+  prometheus:
+    ports:
+      - "9090:9090/tcp"
+
+  core:
+    depends_on:
+      database:
+        condition: service_healthy
+      elasticsearch:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      prometheus:
+        condition: service_started
+    volumes:
+      - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
+      - ./container-fs/core-overlay:/opt/opennms-overlay
+    ports:
+      - "8101:8101/tcp"
+      - "8980:8980/tcp"
+
+  minion:
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  grafana:
+    volumes:
+      - ./container-fs/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - "3000:3000/tcp"
