@@ -44,14 +44,23 @@ Everything in Berlin comes up and gets provisioned with `docker compose up -d`, 
 | `nl6-berlin` | `172.32.0.20` | nl6 simulator, web UI on http://localhost:8080 |
 | `minion-berlin-route` | | One-shot, routes `10.42.0.0/16` from the Minion to nl6 |
 
-The fabric has 2 spines and 3 leaves, every leaf links to every spine and nl6 announces the links over LLDP.
+The fabric is a k=4 fat-tree, a folded 3-tier Clos where every switch uses 4 ports.
+It has 4 pods, each with 2 aggregation and 2 edge switches.
+Inside a pod every edge switch links to both aggregation switches.
+Each aggregation switch links to 2 core switches, and every core switch has one link into each pod.
+Each edge switch serves 2 hosts.
+That makes 36 devices and 48 links, which nl6 announces over LLDP.
 
-| Node | Management IP | nl6 profile |
-| --- | --- | --- |
-| `spine-01`, `spine-02` | `10.42.0.1`, `10.42.0.2` | `cisco_nexus_9500` |
-| `leaf-01` to `leaf-03` | `10.42.0.3` to `10.42.0.5` | `arista_7280r3` |
+| Tier | Nodes | Management IP | nl6 profile |
+| --- | --- | --- | --- |
+| Core | `core-01` to `core-04` | `10.42.0.1` to `10.42.0.4` | `cisco_crs_x` |
+| Aggregation | `pod1-agg-01` to `pod4-agg-02` | `10.42.4.1` to `10.42.4.8` | `arista_7280r3` |
+| Edge | `pod1-edge-01` to `pod4-edge-02` | `10.42.8.1` to `10.42.8.8` | `cisco_catalyst_9500` |
+| Host | `pod1-host-01` to `pod4-host-04` | `10.42.16.1` to `10.42.16.16` | `linux_server` |
 
-Each device exports IPFIX and SNMP traps to the Berlin Minion with its management IP as source address.
+The link graph in `init/nl6-topology.json` comes from nl6's [`examples/large-clos/gen-clos.py`](https://github.com/labmonkeys-space/nl6/tree/v0.34.0/examples/large-clos) with `CLOS_K=4`.
+Every switch exports IPFIX and SNMP traps to the Berlin Minion with its management IP as source address.
+The hosts export nothing.
 The `berlin` requisition in `init/inventory/berlin.yaml` sets ICMP and SNMP on the management IP, which is the SNMP primary interface.
 The `init` service creates the fabric in nl6.
 

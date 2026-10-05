@@ -38,7 +38,7 @@ services:
       kafka:
         condition: service_started
     environment:
-      PROM_JMX_EXPORTER_ENABLED: trUE
+      PROM_JMX_EXPORTER_ENABLED: true
     volumes:
       - ./container-fs/core-etc-overlay:/opt/opennms-etc-overlay
     networks:
