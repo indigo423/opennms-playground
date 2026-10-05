@@ -1,0 +1,139 @@
+# Copyright 2026 Ronny Trommer <ronny@no42.org>
+# SPDX-License-Identifier: Apache-2.0
+#
+# yaml-language-server: $schema=https://raw.githubusercontent.com/no42-org/onmsctl/v0.5.0/schemas/requisition.schema.json
+apiVersion: provisioning.opennms.org/v1
+kind: Requisition
+metadata:
+  name: demo-environment
+spec:
+  foreignSource:
+    scanInterval: 1d
+  nodes:
+  - foreignId: database
+    label: database
+    location: Default
+    interfaces:
+    - ip: 172.30.0.10
+      services:
+      - ICMP
+      snmpPrimary: P
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: horizon
+    label: horizon
+    location: Default
+    interfaces:
+    - ip: 127.0.0.1
+      services:
+      - OpenNMS-JVM
+      snmpPrimary: P
+    - ip: 172.30.0.11
+      services:
+      - ICMP
+      snmpPrimary: S
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: sentinel
+    label: sentinel
+    location: Default
+    interfaces:
+    - ip: 172.30.0.13
+      snmpPrimary: N
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: grafana
+    label: grafana
+    location: Default
+    interfaces:
+    - ip: 172.30.0.14
+      services:
+      - ICMP
+      snmpPrimary: P
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: srv-stuttgart-01
+    label: srv-stuttgart-01
+    location: Default
+    interfaces:
+    - ip: 172.30.0.32
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: srv-stuttgart-02
+    label: srv-stuttgart-02
+    location: Default
+    interfaces:
+    - ip: 172.30.0.33
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: web-stuttgart-01
+    label: web-stuttgart-01
+    location: Default
+    interfaces:
+    - ip: 172.30.0.34
+      services:
+      - ICMP
+      snmpPrimary: P
+    assets:
+      latitude: '48.8258763'
+      longitude: '9.1685303'
+  - foreignId: minion-fulda-01
+    label: minion-fulda-01
+    location: Fulda
+    interfaces:
+    - ip: 172.31.0.12
+      services:
+      - ICMP
+      snmpPrimary: P
+    assets:
+      latitude: '50.5648609'
+      longitude: '9.6850807'
+  - foreignId: srv-fulda-01
+    label: srv-fulda-01
+    location: Fulda
+    interfaces:
+    - ip: 172.31.0.32
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '50.5648609'
+      longitude: '9.6850807'
+  - foreignId: srv-fulda-02
+    label: srv-fulda-02
+    location: Fulda
+    interfaces:
+    - ip: 172.31.0.33
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '50.5648609'
+      longitude: '9.6850807'
+  - foreignId: web-fulda-01
+    label: web-fulda-01
+    location: Fulda
+    interfaces:
+    - ip: 172.31.0.34
+      services:
+      - ICMP
+      snmpPrimary: P
+    assets:
+      latitude: '50.5648609'
+      longitude: '9.6850807'

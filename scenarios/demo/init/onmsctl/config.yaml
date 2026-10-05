@@ -1,0 +1,12 @@
+# Copyright 2026 Ronny Trommer <ronny@no42.org>
+# SPDX-License-Identifier: Apache-2.0
+#
+# onmsctl context for the provision one-shot, the password comes from ONMS_PASSWORD.
+current-context: demo
+contexts:
+  - name: demo
+    server:
+      url: http://core:8980/opennms
+    auth:
+      basic:
+        username: admin

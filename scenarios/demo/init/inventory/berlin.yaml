@@ -1,0 +1,449 @@
+# Copyright 2026 Ronny Trommer <ronny@no42.org>
+# SPDX-License-Identifier: Apache-2.0
+#
+# yaml-language-server: $schema=https://raw.githubusercontent.com/no42-org/onmsctl/v0.5.0/schemas/requisition.schema.json
+apiVersion: provisioning.opennms.org/v1
+kind: Requisition
+metadata:
+  name: berlin
+spec:
+  foreignSource:
+    scanInterval: 1d
+  nodes:
+  # Core, one port per pod
+  - foreignId: core-01
+    label: core-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.0.1
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: core-02
+    label: core-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.0.2
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: core-03
+    label: core-03
+    location: Berlin
+    interfaces:
+    - ip: 10.42.0.3
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: core-04
+    label: core-04
+    location: Berlin
+    interfaces:
+    - ip: 10.42.0.4
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  # Pod 1
+  - foreignId: pod1-agg-01
+    label: pod1-agg-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.1
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-agg-02
+    label: pod1-agg-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.2
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-edge-01
+    label: pod1-edge-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.1
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-edge-02
+    label: pod1-edge-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.2
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-host-01
+    label: pod1-host-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.1
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-host-02
+    label: pod1-host-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.2
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-host-03
+    label: pod1-host-03
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.3
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod1-host-04
+    label: pod1-host-04
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.4
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  # Pod 2
+  - foreignId: pod2-agg-01
+    label: pod2-agg-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.3
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-agg-02
+    label: pod2-agg-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.4
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-edge-01
+    label: pod2-edge-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.3
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-edge-02
+    label: pod2-edge-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.4
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-host-01
+    label: pod2-host-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.5
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-host-02
+    label: pod2-host-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.6
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-host-03
+    label: pod2-host-03
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.7
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod2-host-04
+    label: pod2-host-04
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.8
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  # Pod 3
+  - foreignId: pod3-agg-01
+    label: pod3-agg-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.5
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-agg-02
+    label: pod3-agg-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.6
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-edge-01
+    label: pod3-edge-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.5
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-edge-02
+    label: pod3-edge-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.6
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-host-01
+    label: pod3-host-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.9
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-host-02
+    label: pod3-host-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.10
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-host-03
+    label: pod3-host-03
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.11
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod3-host-04
+    label: pod3-host-04
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.12
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  # Pod 4
+  - foreignId: pod4-agg-01
+    label: pod4-agg-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.7
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-agg-02
+    label: pod4-agg-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.4.8
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-edge-01
+    label: pod4-edge-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.7
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-edge-02
+    label: pod4-edge-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.8.8
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-host-01
+    label: pod4-host-01
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.13
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-host-02
+    label: pod4-host-02
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.14
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-host-03
+    label: pod4-host-03
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.15
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'
+  - foreignId: pod4-host-04
+    label: pod4-host-04
+    location: Berlin
+    interfaces:
+    - ip: 10.42.16.16
+      services:
+      - ICMP
+      - SNMP
+      snmpPrimary: P
+    assets:
+      latitude: '52.5200066'
+      longitude: '13.4049540'

@@ -5,13 +5,16 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.3
-        ipv6_address: fd23:9695:aa65:fff0::3
-        
+
+  kafka-ui:
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.6
+
   elasticsearch:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.4
-        ipv6_address: fd23:9695:aa65:fff0::4
     volumes:
       - ./container-fs/elasticsearch/plugins:/usr/share/elasticsearch/plugins
     ports:
@@ -22,7 +25,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.5
-        ipv6_address: fd23:9695:aa65:fff0::5
     ports:
       - "5601:5601/tcp"
 
@@ -30,7 +32,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.10
-        ipv6_address: fd23:9695:aa65:fff0::10
 
   core:
     depends_on:
@@ -43,7 +44,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.11
-        ipv6_address: fd23:9695:aa65:fff0::11
     ports:
       - "8980:8980/tcp"
   
@@ -56,7 +56,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.13
-        ipv6_address: fd23:9695:aa65:fff0::13
     ports:
       - "8301:8301/tcp"
 
@@ -64,7 +63,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.14
-        ipv6_address: fd23:9695:aa65:fff0::14
     environment:
       GF_INSTALL_PLUGINS: opennms-opennms-app,grafana-piechart-panel,neocat-cal-heatmap-panel,briangann-datatable-panel
     volumes:
@@ -73,15 +71,15 @@ services:
       - "3000:3000/tcp"
 
   minion:
+    healthcheck:
+      start_period: 180s
     volumes:
       - ./container-fs/minion-etc-overlay:/opt/minion-etc-overlay
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.12
-        ipv6_address: fd23:9695:aa65:fff0::12
       net.fulda:
         ipv4_address: 172.31.0.12
-        ipv6_address: fd23:9695:aa65:fff1::12
     ports:
       - "8201:8201/tcp"
       - "9999:9999/udp"
@@ -96,7 +94,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.32
-        ipv6_address: fd23:9695:aa65:fff0::32
 
   srv-stuttgart-02:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
@@ -108,7 +105,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.33
-        ipv6_address: fd23:9695:aa65:fff0::33
 
   web-stuttgart-01:
     image: httpd
@@ -120,7 +116,6 @@ services:
     networks:
       net.stuttgart:
         ipv4_address: 172.30.0.34
-        ipv6_address: fd23:9695:aa65:fff0::34
 
   srv-fulda-01:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
@@ -132,7 +127,6 @@ services:
     networks:
       net.fulda:
         ipv4_address: 172.31.0.32
-        ipv6_address: fd23:9695:aa65:fff1::32
 
   srv-fulda-02:
     image: quay.io/labmonkeys/net-snmp:5.9.4-r0.20240919.b3342
@@ -144,7 +138,6 @@ services:
     networks:
       net.fulda:
         ipv4_address: 172.31.0.33
-        ipv6_address: fd23:9695:aa65:fff1::33
 
   web-fulda-01:
     image: httpd
@@ -156,7 +149,82 @@ services:
     networks:
       net.fulda:
         ipv4_address: 172.31.0.34
-        ipv6_address: fd23:9695:aa65:fff1::34
+
+  minion-berlin:
+    extends:
+      file: ../../include/onms-hzn-minion.yml
+      service: minion
+    healthcheck:
+      start_period: 180s
+    volumes:
+      - ./container-fs/minion-berlin-etc-overlay:/opt/minion-etc-overlay
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.15
+      net.berlin:
+        ipv4_address: 172.32.0.12
+
+  # nl6 devices live inside the nl6 container, route to them via its address
+  minion-berlin-route:
+    image: busybox
+    network_mode: service:minion-berlin
+    cap_add:
+      - NET_ADMIN
+    command: ["ip", "route", "replace", "10.42.0.0/16", "via", "172.32.0.20"]
+    depends_on:
+      minion-berlin:
+        condition: service_started
+
+  nl6-berlin:
+    image: ghcr.io/labmonkeys-space/nl6:v0.34.0
+    # SYS_ADMIN lets nl6 create its nl6sim namespace, so traps and flows
+    # leave with the device IP as source address
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    sysctls:
+      net.ipv4.ip_forward: 1
+    devices:
+      - /dev/net/tun
+    deploy:
+      resources:
+        limits:
+          cpus: 0.5
+          memory: 256m
+    networks:
+      net.berlin:
+        ipv4_address: 172.32.0.20
+    ports:
+      - "8080:8080/tcp"
+
+  # One-shot: create the nl6 fabric, provision the inventory, upload the topology
+  init:
+    build:
+      context: ./init
+      dockerfile_inline: |
+        FROM ghcr.io/no42-org/onmsctl:0.5.0 AS onmsctl
+        FROM curlimages/curl:8.16.0
+        COPY --from=onmsctl /usr/local/bin/onmsctl /usr/local/bin/onmsctl
+    entrypoint: ["sh", "/init/init.sh"]
+    environment:
+      ONMSCTL_CONFIG: /init/onmsctl/config.yaml
+      ONMS_PASSWORD: admin
+    volumes:
+      - ./init:/init:ro
+    networks:
+      net.stuttgart:
+        ipv4_address: 172.30.0.16
+      net.berlin:
+        ipv4_address: 172.32.0.21
+    depends_on:
+      core:
+        condition: service_healthy
+      minion:
+        condition: service_healthy
+      minion-berlin:
+        condition: service_healthy
+      nl6-berlin:
+        condition: service_started
 
 networks:
   net.stuttgart:
@@ -164,10 +232,13 @@ networks:
       ipam:
         config:
           - subnet: 172.30.0.0/16
-          - subnet: fd23:9695:aa65:fff0::/64
   net.fulda:
       driver: bridge
       ipam:
         config:
           - subnet: 172.31.0.0/16
-          - subnet: fd23:9695:aa65:fff1::/64
+  net.berlin:
+      driver: bridge
+      ipam:
+        config:
+          - subnet: 172.32.0.0/16
